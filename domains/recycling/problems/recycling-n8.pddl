@@ -1,0 +1,48 @@
+(define (problem recycling-n8)
+	(:domain recycling)
+	(:objects
+		glass-1 glass-2 glass-3 glass-4 glass-5 - glass
+		paper-1 paper-2 paper-3 - paper
+		bin-1 bin-2 bin-3 bin-4 bin-5 bin-6 bin-7 bin-8 - bin
+		gc - glass-container
+		pc - paper-container
+	)
+	(:init
+		(in glass-1 bin-1)
+		(not (empty bin-1))
+		(in glass-2 bin-2)
+		(not (empty bin-2))
+		(in glass-3 bin-3)
+		(not (empty bin-3))
+		(in glass-4 bin-4)
+		(not (empty bin-4))
+		(in glass-5 bin-5)
+		(not (empty bin-5))
+		(in paper-1 bin-6)
+		(not (empty bin-6))
+		(in paper-2 bin-7)
+		(not (empty bin-7))
+		(in paper-3 bin-8)
+		(not (empty bin-8))
+		(at bin-1)
+	)
+	(:goal (and
+		(in glass-1 gc)
+		(in glass-2 gc)
+		(in glass-3 gc)
+		(in glass-4 gc)
+		(in glass-5 gc)
+		(in paper-1 pc)
+		(in paper-2 pc)
+		(in paper-3 pc)
+		(empty bin-1)
+		(empty bin-2)
+		(empty bin-3)
+		(empty bin-4)
+		(empty bin-5)
+		(empty bin-6)
+		(empty bin-7)
+		(empty bin-8)
+		)
+	)
+)
