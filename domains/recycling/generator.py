@@ -21,10 +21,10 @@ def format_problem(n, name):
     assert n > 0
 
     # problem definition
-    rv = list(['(define (problem {})'.format(name), '\t(:domain recycling)'])
+    acc = list(['(define (problem {})'.format(name), '\t(:domain recycling)'])
 
     # objects
-    rv.append('\t(:objects')
+    acc.append('\t(:objects')
 
     num_glass = random.randint(0, n)
     num_paper = n - num_glass
@@ -40,39 +40,39 @@ def format_problem(n, name):
     bins.append('-')
     bins.append('bin')
 
-    rv.append('\t\t' + ' '.join(glasses))
-    rv.append('\t\t' + ' '.join(papers))
-    rv.append('\t\t' + ' '.join(bins))
-    rv.append('\t\tgc - glass-container')
-    rv.append('\t\tpc - paper-container')
+    acc.append('\t\t' + ' '.join(glasses))
+    acc.append('\t\t' + ' '.join(papers))
+    acc.append('\t\t' + ' '.join(bins))
+    acc.append('\t\tgc - glass-container')
+    acc.append('\t\tpc - paper-container')
 
-    rv.append('\t)')
+    acc.append('\t)')
 
     # init state
-    rv.append('\t(:init')
+    acc.append('\t(:init')
     obj_list = glasses[:-2] + papers[:-2]
     for i in range(0, n):
-        rv.append('\t\t(in {} {})'.format(obj_list[i], bins[i]))
-        rv.append('\t\t(not (empty {}))'.format(bins[i]))
+        acc.append('\t\t(in {} {})'.format(obj_list[i], bins[i]))
+        acc.append('\t\t(not (empty {}))'.format(bins[i]))
 
-    rv.append('\t\t(at {})'.format(bins[random.randint(0, n - 1)]))
+    acc.append('\t\t(at {})'.format(bins[random.randint(0, n - 1)]))
 
-    rv.append('\t)')
+    acc.append('\t)')
 
     # goal state
-    rv.append('\t(:goal (and')
+    acc.append('\t(:goal (and')
     for g in glasses[:-2]:
-        rv.append('\t\t(in {} gc)'.format(g))
+        acc.append('\t\t(in {} gc)'.format(g))
     for p in papers[:-2]:
-        rv.append('\t\t(in {} pc)'.format(p))
+        acc.append('\t\t(in {} pc)'.format(p))
     for b in bins[:-2]:
-        rv.append('\t\t(empty {})'.format(b))
+        acc.append('\t\t(empty {})'.format(b))
 
-    rv.append('\t\t)')
-    rv.append('\t)')
-    rv.append(')')
+    acc.append('\t\t)')
+    acc.append('\t)')
+    acc.append(')')
 
-    return '\n'.join(rv)
+    return '\n'.join(acc)
 
 
 def generate_instance(n):
@@ -95,5 +95,5 @@ if __name__ == '__main__':
         generate_instance(args.n)
     else:
         # Generate instance for n = 1, 2, ..., 10
-        for i in range(1, 11):
-            generate_instance(i)
+        for n in range(1, 11):
+            generate_instance(n)
