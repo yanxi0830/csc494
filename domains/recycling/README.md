@@ -16,9 +16,3 @@ N bins with objects of type paper and glass.
 
 ##### Goal
 All bins must be empty; all paper objects must be in the paper container, and glass objects must be in the glass container
-
-## PDDL
-
-## Types
-- paper
-- glass
