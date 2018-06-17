@@ -16,23 +16,23 @@
     (holding ?o - object)
   ) 
 
-  (:action mvToNext
+  (:action move-to-next
     :parameters (?curr ?next - bin)
     :precondition (and (at ?curr) (not (at ?next)) (not (empty ?next)))
     :effect (and (not (at ?curr)) (at ?next)))
 
-  (:action collectGlass
+  (:action collect-glass
     :parameters (?g - glass ?c - glass-container)
     :precondition (and (holding ?g))
     :effect (and (not (holding ?g)) (in ?g ?c))
     )
 
-  (:action collectPaper
+  (:action collect-paper
     :parameters (?p - paper ?c - paper-container)
     :precondition (and (holding ?p))
     :effect (and (not (holding ?p)) (in ?p ?c)))
 
-  (:action pickObject
+  (:action pick-object
     :parameters (?o - object ?b - bin)
     :precondition (and (at ?b) (not (empty ?b)) (in ?o ?b))
     :effect (and (holding ?o) (empty ?b) (not (in ?o ?b))))

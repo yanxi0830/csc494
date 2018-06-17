@@ -24,16 +24,16 @@
   	(at bin1)
   ) 
 
-  (:goal
-  	(and
-  		(in glass1 gc)
-  		(in glass2 gc)
-  		(in glass3 gc)
-  		(in paper1 pc)
-  		(in paper2 pc)
-  		(empty bin1)
-  		(empty bin2)
-  		(empty bin3)
-  		(empty bin4)
-  		(empty bin5))
+  (:goal (and
+    (in glass1 gc)
+  	(in glass2 gc)
+  	(in glass3 gc)
+  	(in paper1 pc)
+  	(in paper2 pc)
+  	(empty bin1)
+  	(empty bin2)
+  	(empty bin3)
+  	(empty bin4)
+  	(empty bin5)
+    )
   ))
