@@ -1,6 +1,9 @@
-(define (problem ytransport-n2-m7)
+(define (problem ytransport-n4-m6)
 	(:domain y-transport)
 	(:objects
+		monitor-1 monitor-2 monitor-3 monitor-4 - monitor
+		server-1 server-2 server-3 server-4 server-5 server-6 - server
+		capacity-0 capacity-1 capacity-2 - capacity-number
 	)
 	(:init
 		(capacity-predecessor capacity-0 capacity-1)
@@ -10,12 +13,14 @@
 		(path L3 D)
 		(at monitor-1 L1)
 		(at monitor-2 L1)
-		(at - L1)
-		(at monitor L1)
+		(at monitor-3 L1)
+		(at monitor-4 L1)
 		(at server-1 L2)
 		(at server-2 L2)
-		(at - L2)
-		(at server L2)
+		(at server-3 L2)
+		(at server-4 L2)
+		(at server-5 L2)
+		(at server-6 L2)
 		(at T1 L1)
 		(capacity T1 capacity-1)
 		(at T2 L2)
@@ -25,12 +30,14 @@
 	(:goal (and
 		(at monitor-1 L3)
 		(at monitor-2 L3)
-		(at - L3)
-		(at monitor L3)
+		(at monitor-3 L3)
+		(at monitor-4 L3)
 		(at server-1 L3)
 		(at server-2 L3)
-		(at - L3)
-		(at server L3)
+		(at server-3 L3)
+		(at server-4 L3)
+		(at server-5 L3)
+		(at server-6 L3)
 		)
 	)
 )
