@@ -1,8 +1,8 @@
 # Driver Log
 
 ## Description
-See [Problem Diagram](driverlog.png)
 
+See [Problem Diagram](driverlog.png)
 
 ##### Classical Problem
 - Drivers that can walk between locations connectd by a path
