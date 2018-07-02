@@ -17,6 +17,7 @@
     (no-driver ?truck)
   ) 
 
+  ; Fixed Locations
   (:constants L1 L2 L3 D G1 G2 P1 P2 P3 P4 P5 P6)
 
   (:action load-truck
