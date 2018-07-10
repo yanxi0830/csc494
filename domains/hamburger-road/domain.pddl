@@ -127,6 +127,9 @@
                     (not (have-burger ?p))
                     (empty-hand ?r))
     :effect (and
-              (have-burger ?p))
+              (have-burger ?p)
+              (not (have-buns ?p))
+              (not (have-meat ?p))
+              (not (have-lettuce ?p)))
     )
 )
