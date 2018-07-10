@@ -1,4 +1,4 @@
-(define (problem prize-n2-m2)
+(define (problem map-n2-m2)
 	(:domain map)
 	(:objects
 		square-x0-y0 square-x0-y1 square-x1-y0 square-x1-y1 - location
