@@ -35,7 +35,7 @@
 		(waiting-at customer-2 bar)
 		(waiting-at customer-3 table)
 		(ordered-fries customer-1)
-		(ordered-pizza customer-2)
+		(ordered-fries customer-2)
 		(ordered-pizza customer-3)
 		(no-exist pizza-1)
 		(no-exist pizza-2)

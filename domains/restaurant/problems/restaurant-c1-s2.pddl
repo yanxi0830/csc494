@@ -19,7 +19,7 @@
 		(at-kitchen toppings-1)
 		(at-kitchen cheese-1)
 		(at-kitchen potato-1)
-		(waiting-at customer-1 table)
+		(waiting-at customer-1 bar)
 		(ordered-pizza customer-1)
 		(no-exist pizza-1)
 		(no-exist fries-1)

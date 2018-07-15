@@ -112,6 +112,6 @@ if __name__ == '__main__':
         generate_instance(args.c, args.s)
     else:
         # Generate instances with 1-5 servers, and 1-10 customers
-        for c in range(1, 6):
-            for s in range(1, 11):
+        for s in range(1, 6):
+            for c in range(1, 11):
                 generate_instance(c, s)

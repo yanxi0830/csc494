@@ -23,7 +23,7 @@
 		(at-kitchen cheese-2)
 		(at-kitchen potato-1)
 		(at-kitchen potato-2)
-		(waiting-at customer-1 table)
+		(waiting-at customer-1 bar)
 		(waiting-at customer-2 bar)
 		(ordered-pizza customer-1)
 		(ordered-fries customer-2)
