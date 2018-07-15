@@ -1,21 +1,18 @@
-(define (domain restaurant)
+(define (domain restaurant-simple)
 
   (:requirements 
     :typing :equality
   )
 
   (:types
-    location customer server ingredient food - object
-    potato dough toppings cheese - ingredient
+    location customer server food - object
     fries pizza - food
   )
 
   (:constants
-    kitchen bar table - location
-    )
+    kitchen bar table - location)
 
   (:predicates
-    (at-kitchen ?i - ingredient)
     (at-kitchen-food ?f - food)
     (at ?s - server ?l - location)
 
@@ -27,56 +24,31 @@
     (ordered-fries ?c - customer)
 
     (served ?c - customer)
-
     (no-exist ?f - food)
-
-    (chopped ?p - potato)
   )
 
   (:action make-pizza
-    :parameters (?p - pizza ?d - dough ?t - toppings ?c - cheese ?s - server)
+    :parameters (?p - pizza ?s - server)
     :precondition (and
                     (at ?s kitchen)
-                    (at-kitchen ?d)
-                    (at-kitchen ?t)
-                    (at-kitchen ?c)
                     (no-exist ?p)
                     (empty-hand ?s)
-                    )
+                    (not (at-kitchen-food ?p)))
     :effect (and
               (at-kitchen-food ?p)
-              (not (at-kitchen ?d))
-              (not (at-kitchen ?t))
-              (not (at-kitchen ?c))
               (not (no-exist ?p))
-              )
-    )
-
-  (:action chop-potato
-    :parameters (?p - potato ?s - server)
-    :precondition (and
-                    (at ?s kitchen)
-                    (at-kitchen ?p)
-                    (not (chopped ?p))
-                    (empty-hand ?s)
-                    )
-    :effect (and
-              (chopped ?p))
-    )
+              ))
 
   (:action make-fries
-    :parameters (?f - fries ?p - potato ?s - server)
+    :parameters (?f - fries ?s - server)
     :precondition (and
                     (at ?s kitchen)
-                    (at-kitchen ?p)
                     (no-exist ?f)
-                    (chopped ?p)
                     (empty-hand ?s)
+                    (not (at-kitchen-food ?f))
                     )
     :effect (and
               (at-kitchen-food ?f)
-              (not (chopped ?p))
-              (not (at-kitchen ?p))
               (not (no-exist ?f))
               )
     )
@@ -101,7 +73,7 @@
     :precondition (and
                     (at ?s ?from)
                     )
-    :effect (and 
+    :effect (and
               (not (at ?s ?from))
               (at ?s ?to))
     )
@@ -136,5 +108,4 @@
               (empty-hand ?s)
               )
     )
-
 )

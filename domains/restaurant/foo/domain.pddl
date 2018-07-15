@@ -75,7 +75,6 @@
                     )
     :effect (and
               (at-kitchen-food ?f)
-              (not (chopped ?p))
               (not (at-kitchen ?p))
               (not (no-exist ?f))
               )

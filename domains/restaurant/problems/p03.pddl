@@ -1,4 +1,4 @@
-(define (problem p01)
+(define (problem p03)
 	
   (:domain restaurant)
 
@@ -45,16 +45,16 @@
   	(at-kitchen potato-5)
 
   	(waiting-at customer-1 table)
-    (waiting-at customer-2 bar)
+    (waiting-at customer-2 table)
     (waiting-at customer-3 table)
-    (waiting-at customer-4 table)
+    (waiting-at customer-4 bar)
     (waiting-at customer-5 bar)
 
     (ordered-pizza customer-1)
     (ordered-pizza customer-2)
     (ordered-pizza customer-3)
-    (ordered-fries customer-4)
-    (ordered-fries customer-5)
+    (ordered-pizza customer-4)
+    (ordered-pizza customer-5)
 
     (no-exist pizza-1)
     (no-exist pizza-2)
