@@ -48,7 +48,7 @@ def format_problem(n, m, r, g, name):
     grid_squares = []
     for x in range(0, n):
         for y in range(0, m):
-            square = Square(x, y)
+            square = Square(x, y) 
             grid_squares.append(square)
 
     grid_squares_str = list(map(str, grid_squares))
