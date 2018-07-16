@@ -82,6 +82,7 @@
                     (at ?r ?l)
                     (at ?p ?l)
                     (carry ?r ?b)
+                    (not (empty-hand ?r))
                     (not (have-buns ?p)))
     :effect (and
               (not (carry ?r ?b))
@@ -95,6 +96,7 @@
                     (at ?r ?l)
                     (at ?p ?l)
                     (carry ?r ?m)
+                    (not (empty-hand ?r))
                     (not (have-meat ?p)))
     :effect (and
               (not (carry ?r ?m))
@@ -108,6 +110,7 @@
                     (at ?r ?l)
                     (at ?p ?l)
                     (carry ?r ?lett)
+                    (not (empty-hand ?r))
                     (not (have-lettuce ?p)))
     :effect (and
               (not (carry ?r ?lett))

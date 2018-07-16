@@ -114,6 +114,8 @@
                     (ordered-pizza ?c)
                     (not (served ?c))
                     (holding ?s ?p)
+                    ;(not (empty-hand ?s))
+                    (not (no-exist ?p))
                     )
     :effect (and
               (served ?c)
@@ -129,6 +131,8 @@
                     (ordered-fries ?c)
                     (not (served ?c))
                     (holding ?s ?f)
+                    ;(not (empty-hand ?s))
+                    (not (no-exist ?p))
                     )
     :effect (and
               (served ?c)

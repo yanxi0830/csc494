@@ -7,11 +7,11 @@ import os
 import random
 
 parser = argparse.ArgumentParser(
-    description='generate a Driver-Log-Capacity problem of size n x m x k'
+    description='generate a Driver-Log-Capacity problem of size D X T X P'
 )
-parser.add_argument('--n', type=int, help='number of drivers')
-parser.add_argument('--m', type=int, help='number of trucks')
-parser.add_argument('--k', type=int, help='number of packages')
+parser.add_argument('--d', type=int, help='number of drivers')
+parser.add_argument('--t', type=int, help='number of trucks')
+parser.add_argument('--p', type=int, help='number of packages')
 parser.add_argument(
     '--dest-dir',
     default=None,
@@ -95,7 +95,7 @@ def format_problem(n, m, k, name):
 
 
 def generate_instance(n, m, k):
-    name = 'driverlog-capacity-n{}-m{}-k{}'.format(n, m, k)
+    name = 'driverlog-capacity-d{}-t{}-p{}'.format(n, m, k)
 
     problem_str = format_problem(n, m, k, name)
     if args.dest_dir is not None:
@@ -109,11 +109,11 @@ def generate_instance(n, m, k):
 
 
 if __name__ == '__main__':
-    if args.n is not None and args.m is not None and args.k is not None:
-        generate_instance(args.n, args.m, args.k)
+    if args.d is not None and args.t is not None and args.p is not None:
+        generate_instance(args.d, args.t, args.p)
     else:
-        # Generate instances with 1-3 driver and trucks, 1-10 packages
-        for n in range(1, 4):
-            for m in range(1, 4):
-                for k in range(1, 11):
-                    generate_instance(n, m, k)
+        # Generate instances with 1-3 trucks, 1-10 drivers, 1-20 packages
+        for t in range(1, 4):
+            for d in range(1, 11):
+                for p in range(1, 21):
+                    generate_instance(d, t, p)
