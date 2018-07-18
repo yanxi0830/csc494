@@ -1,11 +1,14 @@
 #!/bin/bash
 
+BASEDIR="$(dirname "$0")"
+
 # Specify the basics
-planner="~/Documents/plan"
-domain="domain.pddl"
-problem="p01.pddl"
+planner="~/git/loom"
+domain="$BASEDIR"/domain.pddl
+problem="$BASEDIR"/problems/p01.pddl
+
+generalizer="~/git/loom/generalize"
 
 # Plan!
-$($planner -o $domain -f $problem)
-
-$SHELL
+echo "$generalizer $domain $problem"
+"$generalizer $domain $problem"
