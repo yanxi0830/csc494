@@ -12,4 +12,4 @@ N books, M clothes, K garbage on the ground, X number of robots
 - `put-to-trash`: put object to the trash
 
 ##### Goal
-There is nothing left on the ground, all books must be on the shelf, all clothes must be in thee closet, and all garbage must be in the trash. 
+There is nothing left on the ground, all books must be on the shelf, all clothes must be in thee closet, and all garbage must be in the trash.
