@@ -20,10 +20,10 @@ parser.add_argument(
 args = parser.parse_args()
 
 
-def format_problem(n, m, k, name):
-    assert n > 0
-    assert m > 0
-    assert k > 0
+def format_problem(t, d, p, name):
+    assert d > 0
+    assert t > 0
+    assert p > 0
 
     # problem definition
     acc = list(['(define (problem {})'.format(name), '\t(:domain driverlog-capacity)'])
@@ -31,9 +31,9 @@ def format_problem(n, m, k, name):
     # objects
     acc.append('\t(:objects')
 
-    drivers = ['driver-{}'.format(i) for i in range(1, n+1)]
-    trucks = ['truck-{}'.format(i) for i in range(1, m+1)]
-    packages = ['package-{}'.format(i) for i in range(1, k+1)]
+    drivers = ['driver-{}'.format(i) for i in range(1, d+1)]
+    trucks = ['truck-{}'.format(i) for i in range(1, t+1)]
+    packages = ['package-{}'.format(i) for i in range(1, p+1)]
     capacity = ['capacity-{}'.format(i) for i in range(0, 2)]
 
     acc.append('\t\t' + ' '.join(drivers + ['-', 'driver']))
@@ -94,10 +94,10 @@ def format_problem(n, m, k, name):
     return '\n'.join(acc)
 
 
-def generate_instance(n, m, k):
-    name = 'driverlog-capacity-d{}-t{}-p{}'.format(n, m, k)
+def generate_instance(t, d, p):
+    name = 'driverlog-capacity-t{}-d{}-p{}'.format(t, d, p)
 
-    problem_str = format_problem(n, m, k, name)
+    problem_str = format_problem(t, d, p, name)
     if args.dest_dir is not None:
         os.makedirs(args.dest_dir, exist_ok=True)
         dest_path = os.path.join(args.dest_dir, name + '.pddl')
@@ -116,4 +116,4 @@ if __name__ == '__main__':
         for t in range(1, 4):
             for d in range(1, 11):
                 for p in range(1, 21):
-                    generate_instance(d, t, p)
+                    generate_instance(t, d, p)
