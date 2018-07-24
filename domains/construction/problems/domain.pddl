@@ -122,7 +122,7 @@
     )
 
   (:action put-glass-on-comp
-    :parameters (?w - worker ?gp - part ?comp - composite ?loc - location)
+    :parameters (?w - worker ?gp - glass-part ?comp - composite ?loc - location)
     :precondition (and
                     (at ?w ?loc)
                     (at ?comp ?loc)
@@ -137,7 +137,7 @@
     )
 
   (:action put-clay-on-comp
-    :parameters (?w - worker ?cp - part ?comp - composite ?loc - location)
+    :parameters (?w - worker ?cp - clay-part ?comp - composite ?loc - location)
     :precondition (and
                     (at ?w ?loc)
                     (at ?comp ?loc)
