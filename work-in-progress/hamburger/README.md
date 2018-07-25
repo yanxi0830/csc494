@@ -6,7 +6,7 @@ In this domain, there is a robot that manipulates random supply of buns, lettuce
 The goal is to find a plan of the robot's actions that combines the supplies into hamburgers on N plates. 
 
 #### Initial States
-- random supply of buns, lettuce, and meat
+- supply of buns, lettuce, and meat
 - lettuce are at L1, buns at L2, meat at L3, plates at L4
 - all N plates are empty
 

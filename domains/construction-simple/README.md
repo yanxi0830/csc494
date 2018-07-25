@@ -1,7 +1,7 @@
 # Construction-Simple
 
 ## Description
-See [Problem Diagram](construction.jpeg)
+See [Problem Diagram](construction-simple.jpeg)
 
 ##### Initial States
 - P parts in the `warehouse` waiting to be delivered and assembled to the `construction-area`

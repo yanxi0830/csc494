@@ -1,12 +1,13 @@
 # Construction
 
 ## Description
-See [Problem Diagram](construction.jpeg)
+See [Problem Diagram](construction.jpg)
 
 ##### Initial States
-- P parts in the `warehouse` waiting to be delivered and assembled to the `construction-area`
-- T trucks to move the parts
-- W workers to assemble the parts
+- P `glass-part`, P `clay-part`, P `wood-part` at `glass-warehouse`, `clay-warehouse`, and `wood-warehouse`
+- P empty `composite` at `construction-area`, each awaiting 1 glass, 1 clay, and 1 wood
+- T trucks to move the parts at `construction-area`
+- W workers to assemble the parts at `construction-area`
 
 ##### Actions
 - `load-truck`: load truck with parts
@@ -15,7 +16,8 @@ See [Problem Diagram](construction.jpeg)
 - `disembark-truck`: worker get off the truck
 - `walk`: walk to a certain location
 - `drive-truck`: drive the truck to location
-- `assemble-parts`: assemble the part
+- `put-clay-on-comp`, `put-wood-on-comp`, `put-glass-on-comp`: put material on the composite
+- `assemble-parts`: assemble the composite consisting of clay, wood, and glass
 
 ##### Goal
-All parts are assembled at the construction-area
+All composite parts are assembled at the construction-area

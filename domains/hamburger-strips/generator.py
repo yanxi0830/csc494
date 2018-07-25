@@ -104,18 +104,25 @@ def format_problem(p, r, name):
     return '\n'.join(acc)
 
 
-def generate_instance(p, r):
+def generate_instance(p, r, save=True):
     name = 'hamburger-strips-p{}-r{}'.format(p, r)
 
     problem_str = format_problem(p, r, name)
     if args.dest_dir is not None:
         os.makedirs(args.dest_dir, exist_ok=True)
         dest_path = os.path.join(args.dest_dir, name + '.pddl')
-        print('Writimg to {}'.format(dest_path))
+        print('Writing to {}'.format(dest_path))
+        with open(dest_path, 'w') as fp:
+            print(problem_str, file=fp)
+    elif save:
+        dest_path = os.path.join('/home/xixiyan/git/csc494/domains/hamburger-strips/problems', name + '.pddl')
+        print('Writing to {}',format(dest_path))
         with open(dest_path, 'w') as fp:
             print(problem_str, file=fp)
     else:
         print(problem_str)
+
+    return name
 
 
 if __name__ == '__main__':
