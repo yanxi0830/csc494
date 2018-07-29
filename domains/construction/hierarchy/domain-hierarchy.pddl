@@ -1,4 +1,4 @@
-(define (domain construction)
+(define (domain construction-hierarchy)
 
   (:requirements 
     :typing :strips :adl
@@ -8,6 +8,7 @@
     location locatable - object
     truck composite worker part - locatable
     capacity-number - object
+    wood-part glass-part clay-part - part
   )
 
   (:predicates
@@ -24,10 +25,6 @@
     (have-glass ?c - composite)
     (no-clay ?c - composite)
     (have-clay ?c - composite)
-
-    (WOOD ?p - part)
-    (GLASS ?p - part)
-    (CLAY ?p - part)
 
     (no-assembled ?c - composite)
     (assembled ?c - composite)
@@ -110,13 +107,12 @@
     )
 
   (:action put-wood-on-comp
-    :parameters (?w - worker ?wp - part ?comp - composite ?loc - location)
+    :parameters (?w - worker ?wp - wood-part ?comp - composite ?loc - location)
     :precondition (and
                     (at ?w ?loc)
                     (at ?comp ?loc)
                     (at ?wp ?loc)
                     (no-wood ?comp)
-                    (WOOD ?wp)
                     )
     :effect (and
               (not (at ?wp ?loc))
@@ -126,13 +122,12 @@
     )
 
   (:action put-glass-on-comp
-    :parameters (?w - worker ?gp - part ?comp - composite ?loc - location)
+    :parameters (?w - worker ?gp - glass-part ?comp - composite ?loc - location)
     :precondition (and
                     (at ?w ?loc)
                     (at ?comp ?loc)
                     (at ?gp ?loc)
                     (no-glass ?comp)
-                    (GLASS ?gp)
                     )
     :effect (and
               (not (at ?gp ?loc))
@@ -142,13 +137,12 @@
     )
 
   (:action put-clay-on-comp
-    :parameters (?w - worker ?cp - part ?comp - composite ?loc - location)
+    :parameters (?w - worker ?cp - clay-part ?comp - composite ?loc - location)
     :precondition (and
                     (at ?w ?loc)
                     (at ?comp ?loc)
                     (at ?cp ?loc)
                     (no-clay ?comp)
-                    (CLAY ?cp)
                     )
     :effect (and
               (not (at ?cp ?loc))

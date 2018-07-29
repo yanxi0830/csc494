@@ -1,13 +1,13 @@
-(define (problem p03)
+(define (problem construction-c2-w1-t1)
   
   (:domain construction)
 
   (:objects 
     worker-1 - worker
     truck-1 - truck
-    wood-part-1 wood-part-2 - wood-part
-    glass-part-1 glass-part-2 - glass-part
-    clay-part-1 clay-part-2 - clay-part
+    wood-part-1 wood-part-2 - part
+    glass-part-1 glass-part-2 - part
+    clay-part-1 clay-part-2 - part
     composite-1 composite-2 - composite
     capacity-0 capacity-1 - capacity-number
     wood-warehouse glass-warehouse clay-warehouse construction-area - location
@@ -27,6 +27,15 @@
     (at clay-part-2 clay-warehouse)
     (at composite-1 construction-area)
     (at composite-2 construction-area)
+
+    (WOOD wood-part-1)
+    (WOOD wood-part-2)
+
+    (GLASS glass-part-1)
+    (GLASS glass-part-2)
+
+    (CLAY clay-part-1)
+    (CLAY clay-part-2)
 
     (no-assembled composite-1)
     (no-wood composite-1)
