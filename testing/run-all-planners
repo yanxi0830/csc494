@@ -1,0 +1,39 @@
+#!/bin/bash
+
+echo 'Problem Instance = ' $(basename $2)
+
+RESULT=~/git/csc494/testing/$(basename $2 .pddl)-result.txt
+
+source activate py27
+echo $2 > $RESULT
+
+source activate py27
+cd ~/git/loom
+
+echo "RUNNING LOOM ./generalize"
+printf "\n================ ./generalize ===============\n" >> $RESULT
+./generalize $1 $2 | tail -1 >> $RESULT
+
+echo "RUNNING LOOM ./solve"
+printf "\n================ ./solve ===============\n" >> $RESULT
+./solve | tail -32 >> $RESULT
+
+./clean
+
+echo "RUNNING DOWNWARD --search astar(lmcut())"
+cd ~/git/downward
+printf "\n================ astar(lmcut()) ===============\n" >> $RESULT
+./fast-downward.py $2 --search "astar(lmcut())" | tail -21 >> $RESULT
+
+echo "RUNNING DOWNWARD --translate"
+./fast-downward.py --cleanup
+printf "\n================ --translate ===============\n" >> $RESULT
+./fast-downward.py --translate $2 | tail -3 >> $RESULT
+
+echo "RUNNING DOWNWARD --alias lama-first"
+printf "\n================ --alias lama-first ===============\n" >> $RESULT
+./fast-downward.py --alias lama-first output.sas | tail -17 >> $RESULT
+
+./fast-downward.py --cleanup
+echo "DONE!"
+
