@@ -12,28 +12,35 @@ cd ~/git/loom
 
 echo "RUNNING LOOM ./generalize"
 printf "\n================ ./generalize ===============\n" >> $RESULT
-./generalize $1 $2 | tail -1 >> $RESULT
+time ./generalize $1 $2 | tail -1 >> $RESULT
+printf "\n"
 
 echo "RUNNING LOOM ./solve"
 printf "\n================ ./solve ===============\n" >> $RESULT
-./solve | tail -32 >> $RESULT
-
+time ./solve | tail -32 >> $RESULT
+printf "\n"
 ./clean
 
-echo "RUNNING DOWNWARD --search astar(lmcut())"
 cd ~/git/downward
-printf "\n================ astar(lmcut()) ===============\n" >> $RESULT
-./fast-downward.py $2 --search "astar(lmcut())" | tail -21 >> $RESULT
+./fast-downward.py --cleanup
 
 echo "RUNNING DOWNWARD --translate"
-./fast-downward.py --cleanup
 printf "\n================ --translate ===============\n" >> $RESULT
-./fast-downward.py --translate $2 | tail -3 >> $RESULT
+time timeout 600s ./fast-downward.py --translate $2 | tail -3 >> $RESULT
+printf "\n"
 
 echo "RUNNING DOWNWARD --alias lama-first"
 printf "\n================ --alias lama-first ===============\n" >> $RESULT
-./fast-downward.py --alias lama-first output.sas | tail -17 >> $RESULT
+time timeout 600s ./fast-downward.py --alias lama-first output.sas | tail -17 >> $RESULT
+printf "\n"
 
 ./fast-downward.py --cleanup
-echo "DONE!"
 
+echo "RUNNING DOWNWARD --search astar(lmcut())"
+printf "\n================ astar(lmcut()) ===============\n" >> $RESULT
+time timeout 600s ./fast-downward.py $2 --search "astar(lmcut())" | tail -21 >> $RESULT
+printf "\n"
+
+./fast-downward.py --cleanup
+
+echo "DONE!"
