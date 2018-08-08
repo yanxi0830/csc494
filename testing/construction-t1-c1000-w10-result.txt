@@ -1,0 +1,56 @@
+/home/xixiyan/git/csc494/domains/construction/problems/construction-t1-c1000-w10.pddl
+
+================ ./generalize ===============
+Computing model... 
+================ ./solve ===============
+./solver/src/prp opt quantified-domain.pddl quantified-problem.pddl --jic-limit 18000 --trials 0 --forgetpolicy 0 --fullstate 0 --planlocal 1 --partial-planlocal 1 --plan-with-policy 1 --limit-planlocal 1 --detect-deadends 1 --generalize-deadends 1 --optimized-scd 0
+1. Running translator
+Second argument is not a file name: auto-detect domain file.
+Parsing...
+Failed!
+
+================ --translate ===============
+Preparing model... [0.300s CPU, 0.307s wall-clock]
+Generated 81 rules.
+Computing model... [286.330s CPU, 329.583s wall-clock]
+
+================ --alias lama-first ===============
+Plan length: 1601 step(s).
+Plan cost: 1601
+Expanded 9643 state(s).
+Reopened 0 state(s).
+Evaluated 9644 state(s).
+Evaluations: 19288
+Generated 1041573 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 9644
+Int hash set load factor: 9644/16384 = 0.588623
+Int hash set resizes: 14
+Search time: 199.398s
+Total time: 248.973s
+Solution found.
+Peak memory: 231032 KB
+
+search exit code: 0
+
+================ astar(lmcut()) ===============
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /home/xixiyan/anaconda3/envs/py27/bin/python /home/xixiyan/git/downward/builds/release32/bin/translate/translate.py /home/xixiyan/git/csc494/domains/construction/problems/domain.pddl /home/xixiyan/git/csc494/domains/construction/problems/construction-t1-c1000-w10.pddl
+Parsing...
+Parsing: [0.150s CPU, 0.164s wall-clock]
+Normalizing task... [0.000s CPU, 0.003s wall-clock]
+Instantiating...
+Generating Datalog program... [0.070s CPU, 0.079s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.005s wall-clock]
+Preparing model... [0.230s CPU, 0.235s wall-clock]
+Generated 81 rules.
+Computing model... [239.910s CPU, 240.351s wall-clock]
+30077521 relevant atoms
+294661 auxiliary atoms
+30372182 final queue length
+60414578 total queue pushes
+Completing instantiation... 

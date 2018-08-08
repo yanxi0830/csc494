@@ -1,16 +1,15 @@
-/home/xixiyan/git/csc494/domains/cleaning/problems/cleaning-b10-g10-c10-r1.pddl
+/home/xixiyan/git/csc494/domains/driverlog-capacity/problems/driverlog-capacity-t1-d1-p5.pddl
 
 ================ ./generalize ===============
-Done! [0.040s CPU, 0.045s wall-clock]
+Done! [0.040s CPU, 0.048s wall-clock]
 
 ================ ./solve ===============
-                  -{ General Statistics }-
 
        Monotonicity violations: 0
              Successful states: -nan +/- -nan
                        Replans: -nan +/- -nan
                        Actions: -nan +/- -nan
-            State-Action Pairs: 10
+            State-Action Pairs: 20
   Forbidden State-Action Pairs: 0
                Strongly Cyclic: True
                   Policy Score: 1
@@ -25,61 +24,62 @@ Done! [0.040s CPU, 0.045s wall-clock]
                    Search Time: 0s
            Policy Construction: 0s
  Evaluating the policy quality: 0.02s
-              Using the policy: 0.02s
+              Using the policy: 0.01s
           Just-in-case Repairs: 0.02s
                 Simulator time: 0s
                     Total time: 0.02s
 
 
 
+Dumping the policy and fsaps...
 Strong cyclic plan found.
-Peak memory: 3956 KB
+Peak memory: 4232 KB
 
 OK
 
 ================ --translate ===============
-Done! [0.040s CPU, 0.038s wall-clock]
+Done! [0.030s CPU, 0.029s wall-clock]
 
 translate exit code: 0
 
 ================ --alias lama-first ===============
-Plan length: 60 step(s).
-Plan cost: 60
-Expanded 60 state(s).
+Plan length: 45 step(s).
+Plan cost: 45
+Expanded 96 state(s).
 Reopened 0 state(s).
-Evaluated 61 state(s).
-Evaluations: 122
-Generated 495 state(s).
+Evaluated 97 state(s).
+Evaluations: 194
+Generated 389 state(s).
 Dead ends: 0 state(s).
-Number of registered states: 61
-Int hash set load factor: 61/64 = 0.953125
-Int hash set resizes: 6
-Search time: 0.00442066s
-Total time: 0.011084s
+Number of registered states: 97
+Int hash set load factor: 97/128 = 0.757812
+Int hash set resizes: 7
+Search time: 0.00263917s
+Total time: 0.00462086s
 Solution found.
 Peak memory: 4628 KB
 
 search exit code: 0
 
 ================ astar(lmcut()) ===============
-Plan length: 60 step(s).
-Plan cost: 60
-Expanded 61 state(s).
-Reopened 0 state(s).
-Evaluated 496 state(s).
-Evaluations: 496
-Generated 495 state(s).
+Plan length: 45 step(s).
+Plan cost: 45
+Expanded 301022 state(s).
+Reopened 3 state(s).
+Evaluated 412046 state(s).
+Evaluations: 412046
+Generated 989314 state(s).
 Dead ends: 0 state(s).
-Expanded until last jump: 0 state(s).
-Reopened until last jump: 0 state(s).
-Evaluated until last jump: 1 state(s).
-Generated until last jump: 0 state(s).
-Number of registered states: 496
-Int hash set load factor: 496/512 = 0.96875
-Int hash set resizes: 9
-Search time: 0.022993s
-Total time: 0.0241122s
+Expanded until last jump: 301017 state(s).
+Reopened until last jump: 3 state(s).
+Evaluated until last jump: 412033 state(s).
+Generated until last jump: 989295 state(s).
+Number of registered states: 412046
+Int hash set load factor: 412046/524288 = 0.785915
+Int hash set resizes: 19
+Search time: 11.4955s
+Total time: 11.4963s
 Solution found.
-Peak memory: 4496 KB
+Peak memory: 18772 KB
 
 search exit code: 0

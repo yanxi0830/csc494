@@ -110,7 +110,7 @@ def generate_instance(t, d, p):
 
 if __name__ == '__main__':
     if args.d is not None and args.t is not None and args.p is not None:
-        generate_instance(args.d, args.t, args.p)
+        generate_instance(args.t, args.d, args.p)
     else:
         # Generate instances with 1-3 trucks, 1-10 drivers, 1-20 packages
         for t in range(1, 4):

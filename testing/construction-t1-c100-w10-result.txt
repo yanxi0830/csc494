@@ -1,0 +1,85 @@
+/home/xixiyan/git/csc494/domains/construction/problems/construction-t1-c100-w10.pddl
+
+================ ./generalize ===============
+Done! [19.760s CPU, 19.818s wall-clock]
+
+================ ./solve ===============
+                  -{ General Statistics }-
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 19
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.04s
+              Using the policy: 0.08s
+          Just-in-case Repairs: 0.31s
+                Simulator time: 0s
+                    Total time: 0.31s
+
+
+
+Strong cyclic plan found.
+Peak memory: 26664 KB
+
+OK
+
+================ --translate ===============
+Done! [47.260s CPU, 47.446s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 1601 step(s).
+Plan cost: 1601
+Expanded 9646 state(s).
+Reopened 0 state(s).
+Evaluated 9647 state(s).
+Evaluations: 19294
+Generated 693510 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 9647
+Int hash set load factor: 9647/16384 = 0.588806
+Int hash set resizes: 14
+Search time: 199.079s
+Total time: 242.478s
+Solution found.
+Peak memory: 219068 KB
+
+search exit code: 0
+
+================ astar(lmcut()) ===============
+reading input... [t=2.2512e-05s]
+done reading input! [t=1.68876s]
+packing state variables...done! [t=1.68882s]
+Variables: 713
+FactPairs: 2667
+Bytes per state: 168
+Building successor generator...done! [t=1.82781s]
+peak memory difference for root successor generator creation: 30752 KB
+time for root successor generation creation: 0.138915s
+done initializing global data [t=1.83088s]
+Initializing landmark cut heuristic...
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for lmcut: 406
+[g=0, 1 evaluated, 0 expanded, t=4.66459s, 150644 KB]
+f = 406 [1 evaluated, 0 expanded, t=4.66465s, 150644 KB]
+Initial heuristic value for lmcut: 406
+pruning method: none
+New best heuristic value for lmcut: 405
+[g=1, 5 evaluated, 1 expanded, t=15.331s, 150644 KB]
+Peak memory: 150644 KB
+caught signal 15 -- exiting

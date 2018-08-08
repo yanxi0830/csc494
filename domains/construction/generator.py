@@ -7,7 +7,7 @@ import os
 import random
 
 parser = argparse.ArgumentParser(
-    description='generate a Driver-Log-Capacity problem of size W x T x P'
+    description='generate a Construction of size W x T x C'
 )
 parser.add_argument('--w', type=int, help='number of workers')
 parser.add_argument('--t', type=int, help='number of trucks')
