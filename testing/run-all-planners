@@ -26,12 +26,12 @@ cd ~/git/downward
 
 echo "RUNNING DOWNWARD --translate"
 printf "\n================ --translate ===============\n" >> $RESULT
-time timeout 600s ./fast-downward.py --translate $2 | tail -3 >> $RESULT
+time ./fast-downward.py --translate $2 | tail -3 >> $RESULT
 printf "\n"
 
 echo "RUNNING DOWNWARD --alias lama-first"
 printf "\n================ --alias lama-first ===============\n" >> $RESULT
-time timeout 600s ./fast-downward.py --alias lama-first output.sas | tail -17 >> $RESULT
+time ./fast-downward.py --alias lama-first output.sas | tail -17 >> $RESULT
 printf "\n"
 
 ./fast-downward.py --cleanup
