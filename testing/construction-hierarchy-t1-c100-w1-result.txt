@@ -1,0 +1,62 @@
+/home/xixiyan/git/csc494/domains/construction-hierarchy/problems/construction-hierarchy-t1-c100-w1.pddl
+
+================ ./generalize ===============
+Done! [10.070s CPU, 10.089s wall-clock]
+
+================ ./solve ===============
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 19
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.02s
+              Using the policy: 0.01s
+          Just-in-case Repairs: 0.07s
+                Simulator time: 0s
+                    Total time: 0.07s
+
+
+
+Dumping the policy and fsaps...
+Strong cyclic plan found.
+Peak memory: 14520 KB
+
+OK
+
+================ --translate ===============
+Done! [5.490s CPU, 5.500s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 2084 step(s).
+Plan cost: 2084
+Expanded 148379 state(s).
+Reopened 0 state(s).
+Evaluated 148380 state(s).
+Evaluations: 296760
+Generated 8687937 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 148380
+Int hash set load factor: 148380/262144 = 0.566025
+Int hash set resizes: 18
+Search time: 193.961s
+Total time: 197.09s
+Solution found.
+Peak memory: 337124 KB
+
+search exit code: 0

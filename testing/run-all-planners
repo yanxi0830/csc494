@@ -35,12 +35,12 @@ time timeout 600s ./fast-downward.py --alias lama-first output.sas | tail -17 >>
 printf "\n"
 
 ./fast-downward.py --cleanup
+# LM-CUT - SLOW, OMIT FOR NOW
+# echo "RUNNING DOWNWARD --search astar(lmcut())"
+# printf "\n================ astar(lmcut()) ===============\n" >> $RESULT
+# time timeout 600s ./fast-downward.py $2 --search "astar(lmcut())" | tail -21 >> $RESULT
+# printf "\n"
 
-echo "RUNNING DOWNWARD --search astar(lmcut())"
-printf "\n================ astar(lmcut()) ===============\n" >> $RESULT
-time timeout 600s ./fast-downward.py $2 --search "astar(lmcut())" | tail -21 >> $RESULT
-printf "\n"
-
-./fast-downward.py --cleanup
+# ./fast-downward.py --cleanup
 
 echo "DONE!"
