@@ -1,28 +1,32 @@
 (define (domain logistics)
 
   (:requirements 
-    :strips
+    :strips :typing
   )
 
-  (:predicates
-    (TRUCK ?truck)
-    (AIRPLANE ?airplane)
-    (PACKAGE ?package)
-    (LOCATION ?location)
-    (CITY ?city)
-    (AIRPORT ?airport)
+  (:types
+    location city locatable - object
+    vehicle package - locatable
+    truck airplane - vehicle
+    )
 
-    (at ?object ?location)
-    (in ?package ?vehicle)
-    (in-city ?location ?city)
+
+  (:predicates
+    ; (TRUCK ?truck)
+    ; (AIRPLANE ?airplane)
+    ; (PACKAGE ?package)
+    ; (LOCATION ?location)
+    ; (CITY ?city)
+    (AIRPORT ?airport - location)
+
+    (at ?object - locatable ?location - location)
+    (in ?package - package ?vehicle - vehicle)
+    (in-city ?location - location ?city - city)
   ) 
 
   (:action load-truck
-    :parameters (?package ?truck ?location)
+    :parameters (?package - package ?truck - truck ?location - location)
     :precondition (and
-                    (PACKAGE ?package)
-                    (TRUCK ?truck)
-                    (LOCATION ?location)
                     (at ?truck ?location)
                     (at ?package ?location)
                     )
@@ -32,11 +36,8 @@
     )
 
   (:action load-airplane
-    :parameters (?package ?airplane ?location)
+    :parameters (?package - package ?airplane - airplane ?location - location)
     :precondition (and
-                    (PACKAGE ?package)
-                    (AIRPLANE ?airplane)
-                    (LOCATION ?location)
                     (at ?package ?location)
                     (at ?airplane ?location)
                     )
@@ -47,11 +48,8 @@
     )
 
   (:action unload-truck
-    :parameters (?package ?truck ?location)
+    :parameters (?package - package ?truck - truck  ?location - location)
     :precondition (and
-                    (PACKAGE ?package)
-                    (TRUCK ?truck)
-                    (LOCATION ?location)
                     (at ?truck ?location)
                     (in ?package ?truck)
                     )
@@ -61,11 +59,8 @@
     )
 
   (:action unload-airplane
-    :parameters (?package ?airplane ?location)
+    :parameters (?package - package ?airplane - airplane ?location - location)
     :precondition (and
-                    (PACKAGE ?package)
-                    (AIRPLANE ?airplane)
-                    (LOCATION ?location)
                     (at ?airplane ?location)
                     (in ?package ?airplane)
                     )
@@ -75,12 +70,8 @@
     )
 
   (:action drive-truck
-    :parameters (?truck ?loc-from ?loc-to ?city)
+    :parameters (?truck - truck ?loc-from - location ?loc-to - location ?city - city)
     :precondition (and
-                    (TRUCK ?truck)
-                    (LOCATION ?loc-from)
-                    (LOCATION ?loc-to)
-                    (CITY ?city)
                     (at ?truck ?loc-from)
                     (in-city ?loc-from ?city)
                     (in-city ?loc-to ?city)
@@ -91,9 +82,8 @@
     )
 
   (:action fly-airplane
-    :parameters (?airplane ?loc-from ?loc-to)
+    :parameters (?airplane - airplane ?loc-from - location ?loc-to - location)
     :precondition (and
-                    (AIRPLANE ?airplane)
                     (AIRPORT ?loc-from)
                     (AIRPORT ?loc-to)
                     (at ?airplane ?loc-from)

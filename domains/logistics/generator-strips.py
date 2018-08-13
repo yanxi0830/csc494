@@ -35,29 +35,29 @@ def format_problem(p, name):
     airports = ['airport-a', 'airport-b', 'airport-c']
     warehouses = ['warehouse-a', 'warehouse-b', 'warehouse-c']
 
-    acc.append('\t\t' + ' '.join(packages + ['-', 'package']))
-    acc.append('\t\t' + ' '.join(city  + ['-', 'city']))
-    acc.append('\t\t' + ' '.join(trucks + ['-', 'truck']))
-    acc.append('\t\t' + ' '.join(planes  + ['-', 'airplane']))
-    acc.append('\t\t' + ' '.join(houses  + ['-', 'location']))
-    acc.append('\t\t' + ' '.join(airports  + ['-', 'location']))
-    acc.append('\t\t' + ' '.join(warehouses  + ['-', 'location']))
+    acc.append('\t\t' + ' '.join(packages))
+    acc.append('\t\t' + ' '.join(city))
+    acc.append('\t\t' + ' '.join(trucks))
+    acc.append('\t\t' + ' '.join(planes))
+    acc.append('\t\t' + ' '.join(houses))
+    acc.append('\t\t' + ' '.join(airports))
+    acc.append('\t\t' + ' '.join(warehouses))
 
     acc.append('\t)')
 
     # init state
     acc.append('\t(:init')
 
-    # for o in packages:
-    #     acc.append('\t\t(PACKAGE {})'.format(o))
-    # for c in city:
-    #     acc.append('\t\t(CITY {})'.format(c))
-    # for t in trucks:
-    #     acc.append('\t\t(TRUCK {})'.format(t))
-    # for o in planes:
-    #     acc.append('\t\t(AIRPLANE {})'.format(o))
-    # for o in houses + airports + warehouses:
-    #     acc.append('\t\t(LOCATION {})'.format(o))
+    for o in packages:
+        acc.append('\t\t(PACKAGE {})'.format(o))
+    for c in city:
+        acc.append('\t\t(CITY {})'.format(c))
+    for t in trucks:
+        acc.append('\t\t(TRUCK {})'.format(t))
+    for o in planes:
+        acc.append('\t\t(AIRPLANE {})'.format(o))
+    for o in houses + airports + warehouses:
+        acc.append('\t\t(LOCATION {})'.format(o))
     for o in airports:
         acc.append('\t\t(AIRPORT {})'.format(o))
 
