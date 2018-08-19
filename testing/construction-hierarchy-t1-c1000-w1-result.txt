@@ -1,7 +1,7 @@
-/home/xixiyan/git/csc494/domains/construction-hierarchy/problems/construction-hierarchy-t1-c1000-w1.pddl
+/home/xiyan/git/csc494/domains/construction-hierarchy/problems/construction-hierarchy-t1-c1000-w1.pddl
 
 ================ ./generalize ===============
-Done! [971.000s CPU, 972.986s wall-clock]
+Done! [925.430s CPU, 927.911s wall-clock]
 
 ================ ./solve ===============
 
@@ -23,8 +23,8 @@ Done! [971.000s CPU, 972.986s wall-clock]
          Engine Initialization: 0s
                    Search Time: 0s
            Policy Construction: 0s
- Evaluating the policy quality: 0.02s
-              Using the policy: 0.03s
+ Evaluating the policy quality: 0.01s
+              Using the policy: 0.01s
           Just-in-case Repairs: 0.07s
                 Simulator time: 0s
                     Total time: 0.07s
