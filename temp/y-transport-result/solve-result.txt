@@ -43,4 +43,33 @@ About to replan:
 6 --> 7 
 7 --> 8 
 8 --> 
+....
+...
+....
+85 --> 27 
+86 --> 87 
+87 --> 88 
+88 --> 89 
+89 --> 90 
+90 --> 91 
+91 --> 92 
+92 --> 93 
+93 --> 94 
+94 --> 95 
+95 --> 96 
+96 --> 97 
+97 --> 98 
+98 --> 99 
+99 --> 100 
+100 --> 101 
+101 --> 102 
+102 --> 103 
+103 --> 104 
+104 --> 73 
+Generated 860 state(s).
+Dead ends: 0 state(s).
+Failed to allocate memory. Released memory buffer.
+Memory limit has been reached.
+Peak memory: 4096000 KB
+Failed!
 
