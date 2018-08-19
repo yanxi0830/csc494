@@ -1,0 +1,46 @@
+3. Running search
+./solver/src/search/downward ipc policy-repair-opt --jic-limit 18000 --trials 0 --forgetpolicy 0 --fullstate 0 --planlocal 1 --partial-planlocal 1 --plan-with-policy 1 --limit-planlocal 1 --detect-deadends 1 --generalize-deadends 1 --optimized-scd 0
+This is a unit task.
+./solver/src/search/downward-release --heuristic "h=ff" --search "lazy_wastar([h],preferred=[h])" --random-seed 814102613 --jic-limit 18000 --trials 0 --forgetpolicy 0 --fullstate 0 --planlocal 1 --partial-planlocal 1 --plan-with-policy 1 --limit-planlocal 1 --detect-deadends 1 --generalize-deadends 1 --optimized-scd 0 < output
+Simplifying transitions... done!
+Variables: 16
+Bytes per state: 4
+ !! Warning: Disabling the simplification of unary operators !!
+ !!           to keep the non-deterministic planning sound.  !!
+Generated 36588 state(s).
+Dead ends: 0 state(s).
+drive truck-2 temp-loc monitor-loc (1)
+load_DETDUP_1 truck-2 monitor-loc package-bag1 capacity-1 capacity-2 (1)
+drive truck-2 monitor-loc temp-loc (1)
+drive truck-2 temp-loc server-loc (1)
+load_DETDUP_1 truck-2 server-loc package-bag2 capacity-0 capacity-1 (1)
+drive truck-2 server-loc temp-loc (1)
+drive truck-2 temp-loc goal-loc (1)
+unload-goal_DETDUP_3 truck-2 goal-loc package-bag1 package-bag2 capacity-0 capacity-1 capacity-2 (1)
+Plan length: 8 step(s).
+Plan cost: 8
+Initial search time: 0.02s
+Initial total time: 0.02s
+
+
+Creating the simulator...
+
+
+Regressing the plan...
+
+
+Generating an initial policy...
+
+
+Computing just-in-time repairs...
+About to replan:
+0 --> 1 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
