@@ -2,7 +2,7 @@
 
 echo 'Domain = ' $1
 
-RESULT_DIR=~/git/csc494/testing/foo
+RESULT_DIR=~/git/csc494/testing/TEMP-RESULT
 DOMAINS_DIR=~/git/csc494/domains/
 
 source activate py27

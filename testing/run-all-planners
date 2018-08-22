@@ -2,7 +2,7 @@
 
 echo 'Problem Instance = ' $(basename $2)
 
-RESULT=~/git/csc494/testing/$(basename $2 .pddl)-result.txt
+RESULT=$(pwd)/$(basename $2 .pddl)-result.txt
 
 source activate py27
 echo $2 > $RESULT
