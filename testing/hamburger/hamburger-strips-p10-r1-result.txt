@@ -1,7 +1,7 @@
-/home/xiyan/git/csc494/domains/logistics/problems/logistics-p10.pddl
+/home/xiyan/git/csc494/domains/hamburger-strips/problems/hamburger-strips-p10-r1.pddl
 
 ================ ./generalize ===============
-Done! [0.040s CPU, 0.040s wall-clock]
+Done! [0.080s CPU, 0.072s wall-clock]
 
 ================ ./solve ===============
                   -{ General Statistics }-
@@ -10,7 +10,7 @@ Done! [0.040s CPU, 0.040s wall-clock]
              Successful states: -nan +/- -nan
                        Replans: -nan +/- -nan
                        Actions: -nan +/- -nan
-            State-Action Pairs: 28
+            State-Action Pairs: 14
   Forbidden State-Action Pairs: 0
                Strongly Cyclic: True
                   Policy Score: 1
@@ -22,41 +22,41 @@ Done! [0.040s CPU, 0.040s wall-clock]
 
         Regression Computation: 0s
          Engine Initialization: 0s
-                   Search Time: 0.16s
+                   Search Time: 0s
            Policy Construction: 0s
- Evaluating the policy quality: 0.05s
-              Using the policy: 0.03s
-          Just-in-case Repairs: 0.21s
+ Evaluating the policy quality: 0.01s
+              Using the policy: 0.01s
+          Just-in-case Repairs: 0.01s
                 Simulator time: 0s
-                    Total time: 0.21s
+                    Total time: 0.01s
 
 
 
 Strong cyclic plan found.
-Peak memory: 13968 KB
+Peak memory: 4772 KB
 
 OK
 
 ================ --translate ===============
-Done! [0.080s CPU, 0.098s wall-clock]
+Done! [0.090s CPU, 0.091s wall-clock]
 
 translate exit code: 0
 
 ================ --alias lama-first ===============
-Plan length: 69 step(s).
-Plan cost: 69
-Expanded 248 state(s).
+Plan length: 151 step(s).
+Plan cost: 151
+Expanded 696 state(s).
 Reopened 0 state(s).
-Evaluated 249 state(s).
-Evaluations: 498
-Generated 6377 state(s).
+Evaluated 697 state(s).
+Evaluations: 1394
+Generated 5980 state(s).
 Dead ends: 0 state(s).
-Number of registered states: 249
-Int hash set load factor: 249/256 = 0.972656
-Int hash set resizes: 8
-Search time: 0.0241645s
-Total time: 0.0475945s
+Number of registered states: 697
+Int hash set load factor: 697/1024 = 0.680664
+Int hash set resizes: 10
+Search time: 0.0235468s
+Total time: 0.0307751s
 Solution found.
-Peak memory: 4900 KB
+Peak memory: 5052 KB
 
 search exit code: 0

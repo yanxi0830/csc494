@@ -1,10 +1,9 @@
-/home/xiyan/git/csc494/domains/logistics/problems/logistics-p10.pddl
+/home/xixiyan/git/csc494/domains/logistics/problems/logistics-p10.pddl
 
 ================ ./generalize ===============
-Done! [0.040s CPU, 0.040s wall-clock]
+Done! [0.080s CPU, 0.072s wall-clock]
 
 ================ ./solve ===============
-                  -{ General Statistics }-
 
        Monotonicity violations: 0
              Successful states: -nan +/- -nan
@@ -22,23 +21,24 @@ Done! [0.040s CPU, 0.040s wall-clock]
 
         Regression Computation: 0s
          Engine Initialization: 0s
-                   Search Time: 0.16s
+                   Search Time: 0.06s
            Policy Construction: 0s
- Evaluating the policy quality: 0.05s
-              Using the policy: 0.03s
-          Just-in-case Repairs: 0.21s
+ Evaluating the policy quality: 0.02s
+              Using the policy: 0.65s
+          Just-in-case Repairs: 4.32s
                 Simulator time: 0s
-                    Total time: 0.21s
+                    Total time: 4.32s
 
 
 
+Dumping the policy and fsaps...
 Strong cyclic plan found.
-Peak memory: 13968 KB
+Peak memory: 710156 KB
 
 OK
 
 ================ --translate ===============
-Done! [0.080s CPU, 0.098s wall-clock]
+Done! [0.050s CPU, 0.051s wall-clock]
 
 translate exit code: 0
 
@@ -54,9 +54,9 @@ Dead ends: 0 state(s).
 Number of registered states: 249
 Int hash set load factor: 249/256 = 0.972656
 Int hash set resizes: 8
-Search time: 0.0241645s
-Total time: 0.0475945s
+Search time: 0.0118485s
+Total time: 0.0182248s
 Solution found.
-Peak memory: 4900 KB
+Peak memory: 4892 KB
 
 search exit code: 0

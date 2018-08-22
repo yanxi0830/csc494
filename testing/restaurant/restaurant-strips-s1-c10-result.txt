@@ -1,0 +1,62 @@
+/home/xiyan/git/csc494/domains/restaurant-strips/problems/restaurant-strips-s1-c10.pddl
+
+================ ./generalize ===============
+Done! [0.460s CPU, 0.465s wall-clock]
+
+================ ./solve ===============
+
+                  -{ General Statistics }-
+
+       Monotonicity violations: 32
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 22
+  Forbidden State-Action Pairs: 876
+               Strongly Cyclic: False
+                  Policy Score: 0.298
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0.01s
+                   Search Time: 0.04s
+           Policy Construction: 0.01s
+ Evaluating the policy quality: 1.54s
+              Using the policy: 0.81s
+          Just-in-case Repairs: 1.61s
+                Simulator time: 0s
+                    Total time: 1.61s
+
+
+
+Plan found, but not strong cyclic.
+Peak memory: 8480 KB
+Failed!
+
+================ --translate ===============
+Done! [1.400s CPU, 1.403s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 50 step(s).
+Plan cost: 50
+Expanded 178 state(s).
+Reopened 0 state(s).
+Evaluated 179 state(s).
+Evaluations: 358
+Generated 105210 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 179
+Int hash set load factor: 179/256 = 0.699219
+Int hash set resizes: 8
+Search time: 0.131498s
+Total time: 0.241533s
+Solution found.
+Peak memory: 14604 KB
+
+search exit code: 0

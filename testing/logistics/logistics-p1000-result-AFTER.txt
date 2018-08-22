@@ -1,10 +1,9 @@
-/home/xiyan/git/csc494/domains/logistics/problems/logistics-p10.pddl
+/home/xixiyan/git/csc494/domains/logistics/problems/logistics-p1000.pddl
 
 ================ ./generalize ===============
-Done! [0.040s CPU, 0.040s wall-clock]
+Done! [77.490s CPU, 77.704s wall-clock]
 
 ================ ./solve ===============
-                  -{ General Statistics }-
 
        Monotonicity violations: 0
              Successful states: -nan +/- -nan
@@ -22,41 +21,42 @@ Done! [0.040s CPU, 0.040s wall-clock]
 
         Regression Computation: 0s
          Engine Initialization: 0s
-                   Search Time: 0.16s
+                   Search Time: 0.06s
            Policy Construction: 0s
- Evaluating the policy quality: 0.05s
-              Using the policy: 0.03s
-          Just-in-case Repairs: 0.21s
+ Evaluating the policy quality: 0.03s
+              Using the policy: 0.72s
+          Just-in-case Repairs: 4.61s
                 Simulator time: 0s
-                    Total time: 0.21s
+                    Total time: 4.61s
 
 
 
+Dumping the policy and fsaps...
 Strong cyclic plan found.
-Peak memory: 13968 KB
+Peak memory: 710156 KB
 
 OK
 
 ================ --translate ===============
-Done! [0.080s CPU, 0.098s wall-clock]
+Done! [6.570s CPU, 6.594s wall-clock]
 
 translate exit code: 0
 
 ================ --alias lama-first ===============
-Plan length: 69 step(s).
-Plan cost: 69
-Expanded 248 state(s).
+Plan length: 6009 step(s).
+Plan cost: 6009
+Expanded 20376 state(s).
 Reopened 0 state(s).
-Evaluated 249 state(s).
-Evaluations: 498
-Generated 6377 state(s).
+Evaluated 20377 state(s).
+Evaluations: 40754
+Generated 27815863 state(s).
 Dead ends: 0 state(s).
-Number of registered states: 249
-Int hash set load factor: 249/256 = 0.972656
-Int hash set resizes: 8
-Search time: 0.0241645s
-Total time: 0.0475945s
+Number of registered states: 20377
+Int hash set load factor: 20377/32768 = 0.621857
+Int hash set resizes: 15
+Search time: 147.43s
+Total time: 177.19s
 Solution found.
-Peak memory: 4900 KB
+Peak memory: 754096 KB
 
 search exit code: 0
