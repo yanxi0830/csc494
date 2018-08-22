@@ -1,0 +1,45 @@
+/home/xiyan/git/csc494/domains/y-transport-no-hierachy/problems/ytransport-m50-s50.pddl
+
+================ ./generalize ===============
+Done! [0.660s CPU, 0.662s wall-clock]
+
+================ ./solve ===============
+                  -{ General Statistics }-
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 25
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0.11s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.03s
+              Using the policy: 0.03s
+          Just-in-case Repairs: 0.14s
+                Simulator time: 0s
+                    Total time: 0.14s
+
+
+
+Strong cyclic plan found.
+Peak memory: 5848 KB
+
+OK
+
+================ --translate ===============
+Done! [1.180s CPU, 1.185s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============

@@ -112,8 +112,6 @@ if __name__ == '__main__':
     if args.d is not None and args.t is not None and args.p is not None:
         generate_instance(args.t, args.d, args.p)
     else:
-        # Generate instances with 1-3 trucks, 1-10 drivers, 1-20 packages
-        for t in range(1, 4):
-            for d in range(1, 11):
-                for p in range(1, 21):
-                    generate_instance(t, d, p)
+        # Generate instances 1 truck, 1 driver, 1-1000 packages incremented by 10
+        for p in range(1, 100):
+            generate_instance(1, 1, p*10)

@@ -1,7 +1,7 @@
 (define (domain driverlog-capacity)
 
-  (:requirements 
-    :typing :strips
+  (:requirements
+    :typing
   )
 
   (:types
@@ -19,7 +19,7 @@
     (no-driver ?t - truck)
     (capacity ?t - truck ?n - capacity-number)
     (capacity-predecessor ?n1 ?n2 - capacity-number)
-  ) 
+  )
 
   ; Fixed locations
   (:constants L1 L2 L3 D G1 G2 P1 P2 P3 P4 P5 P6 - location)
@@ -46,7 +46,7 @@
                     (in ?p ?t)
                     (capacity-predecessor ?n1 ?n2)
                     (capacity ?t ?n1))
-    :effect (and 
+    :effect (and
               (not (in ?p ?t))
               (at ?p ?l)
               (capacity ?t ?n2)
@@ -55,7 +55,7 @@
 
   (:action board-truck
     :parameters (?d - driver ?t - truck ?l - location)
-    :precondition (and 
+    :precondition (and
                     (at ?d ?l)
                     (at ?t ?l)
                     (no-driver ?t))
