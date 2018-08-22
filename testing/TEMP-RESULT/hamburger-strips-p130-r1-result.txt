@@ -1,0 +1,62 @@
+/home/xiyan/git/csc494/domains//hamburger-strips/foo/hamburger-strips-p130-r1.pddl
+
+================ ./generalize ===============
+Done! [8.710s CPU, 8.747s wall-clock]
+
+================ ./solve ===============
+                  -{ General Statistics }-
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 14
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.01s
+              Using the policy: 0s
+          Just-in-case Repairs: 0.02s
+                Simulator time: 0s
+                    Total time: 0.02s
+
+
+
+Strong cyclic plan found.
+Peak memory: 4772 KB
+
+OK
+
+================ --translate ===============
+Done! [9.950s CPU, 9.969s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 1951 step(s).
+Plan cost: 1951
+Expanded 41640 state(s).
+Reopened 0 state(s).
+Evaluated 41641 state(s).
+Evaluations: 83282
+Generated 2513378 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 41641
+Int hash set load factor: 41641/65536 = 0.635391
+Int hash set resizes: 16
+Search time: 99.1307s
+Total time: 110.215s
+Solution found.
+Peak memory: 93804 KB
+
+search exit code: 0

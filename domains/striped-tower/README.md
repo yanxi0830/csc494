@@ -3,13 +3,11 @@
 ## Description
 
 ##### Initial States
-N books, M clothes, K garbage on the ground, X number of robots
+A tower of blocks with N blue blocks above M red blocks. The bottom most, red block of the tower satisfies the predicate "base"
 
 ##### Actions
-- `pick-up`: robot picks up an object on the ground
-- `put-to-shelf`: robot put an object it's holding to the shelf
-- `put-to-closet`: put object to the closet
-- `put-to-trash`: put object to the trash
+- `mv(b, c)`: place block b on block c (both b and c must be clear)
+- `mvToTable(b)`: place block b on the table (b must be clear)
 
 ##### Goal
-There is nothing left on the ground, all books must be on the shelf, all clothes must be in thee closet, and all garbage must be in the trash.
+A striped tower of blocks alternating colors, starting with the "base" block at the bottom. 

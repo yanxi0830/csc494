@@ -130,5 +130,5 @@ if __name__ == '__main__':
         generate_instance(args.p, args.r)
     else:
         # Generate instances with 10-100 plates, 1 robot
-        for i in range(1, 11):
+        for i in range(1, 21):
             generate_instance(i*10, 1)
