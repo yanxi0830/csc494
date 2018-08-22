@@ -1,0 +1,106 @@
+/home/xixiyan/git/csc494/domains/driverlog-capacity/problems/driverlog-capacity-t1-d1-p100.pddl
+
+================ ./generalize ===============
+Done! [0.230s CPU, 0.377s wall-clock]
+
+================ ./solve ===============
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 20
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.02s
+              Using the policy: 0.01s
+          Just-in-case Repairs: 0.02s
+                Simulator time: 0s
+                    Total time: 0.02s
+
+
+
+Dumping the policy and fsaps...
+Strong cyclic plan found.
+Peak memory: 4232 KB
+
+OK
+
+================ --translate ===============
+Done! [0.280s CPU, 0.365s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 805 step(s).
+Plan cost: 805
+Expanded 12863 state(s).
+Reopened 0 state(s).
+Evaluated 12864 state(s).
+Evaluations: 25728
+Generated 62690 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 12864
+Int hash set load factor: 12864/16384 = 0.785156
+Int hash set resizes: 14
+Search time: 2.16395s
+Total time: 2.25843s
+Solution found.
+Peak memory: 9296 KB
+
+search exit code: 0
+
+================ astar(lmcut()) ===============
+f = 114 [26 evaluated, 16 expanded, t=0.0475542s, 5092 KB]
+f = 115 [26 evaluated, 18 expanded, t=0.0475981s, 5092 KB]
+f = 117 [34 evaluated, 25 expanded, t=0.0583033s, 5092 KB]
+f = 118 [40 evaluated, 33 expanded, t=0.066385s, 5092 KB]
+f = 119 [49 evaluated, 36 expanded, t=0.079153s, 5092 KB]
+f = 120 [51 evaluated, 39 expanded, t=0.0819985s, 5092 KB]
+f = 121 [60 evaluated, 48 expanded, t=0.0953539s, 5092 KB]
+f = 122 [60 evaluated, 50 expanded, t=0.0954162s, 5092 KB]
+f = 124 [64 evaluated, 59 expanded, t=0.101103s, 5092 KB]
+f = 126 [66 evaluated, 63 expanded, t=0.103987s, 5092 KB]
+f = 211 [66 evaluated, 65 expanded, t=0.104013s, 5092 KB]
+f = 212 [467 evaluated, 166 expanded, t=1.16833s, 5092 KB]
+f = 213 [967 evaluated, 366 expanded, t=2.4998s, 5092 KB]
+f = 214 [1569 evaluated, 567 expanded, t=4.09131s, 5228 KB]
+f = 215 [3669 evaluated, 1367 expanded, t=9.88231s, 5364 KB]
+New best heuristic value for lmcut: 105
+[g=13, 3672 evaluated, 1368 expanded, t=9.88926s, 5364 KB]
+f = 216 [92869 evaluated, 29969 expanded, t=243.819s, 12136 KB]
+f = 217 [146567 evaluated, 52467 expanded, t=388.008s, 16624 KB]
+Peak memory: 19712 KB
+caught signal 15 -- exiting
+f = 114 [26 evaluated, 16 expanded, t=0.0452183s, 5092 KB]
+f = 115 [26 evaluated, 18 expanded, t=0.0452724s, 5092 KB]
+f = 117 [34 evaluated, 25 expanded, t=0.0556944s, 5092 KB]
+f = 118 [40 evaluated, 33 expanded, t=0.0637197s, 5092 KB]
+f = 119 [49 evaluated, 36 expanded, t=0.0762856s, 5092 KB]
+f = 120 [51 evaluated, 39 expanded, t=0.0791284s, 5092 KB]
+f = 121 [60 evaluated, 48 expanded, t=0.091945s, 5092 KB]
+f = 122 [60 evaluated, 50 expanded, t=0.0920039s, 5092 KB]
+f = 124 [64 evaluated, 59 expanded, t=0.0975648s, 5092 KB]
+f = 126 [66 evaluated, 63 expanded, t=0.100445s, 5092 KB]
+f = 211 [66 evaluated, 65 expanded, t=0.100475s, 5092 KB]
+f = 212 [467 evaluated, 166 expanded, t=1.13956s, 5092 KB]
+f = 213 [967 evaluated, 366 expanded, t=2.49642s, 5092 KB]
+f = 214 [1569 evaluated, 567 expanded, t=4.14469s, 5228 KB]
+f = 215 [3669 evaluated, 1367 expanded, t=9.71329s, 5364 KB]
+New best heuristic value for lmcut: 105
+[g=13, 3672 evaluated, 1368 expanded, t=9.7196s, 5364 KB]
+f = 216 [92869 evaluated, 29969 expanded, t=235.918s, 12136 KB]
+f = 217 [146567 evaluated, 52467 expanded, t=375.977s, 16624 KB]
+Peak memory: 19848 KB
+caught signal 15 -- exiting

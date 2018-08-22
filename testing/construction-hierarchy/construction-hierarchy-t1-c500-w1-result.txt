@@ -1,0 +1,45 @@
+/home/xixiyan/git/csc494/domains/construction-hierarchy/problems/construction-hierarchy-t1-c500-w1.pddl
+
+================ ./generalize ===============
+Done! [247.970s CPU, 248.589s wall-clock]
+
+================ ./solve ===============
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 19
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0.01s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.04s
+              Using the policy: 0.02s
+          Just-in-case Repairs: 0.1s
+                Simulator time: 0s
+                    Total time: 0.1s
+
+
+
+Dumping the policy and fsaps...
+Strong cyclic plan found.
+Peak memory: 14520 KB
+
+OK
+
+================ --translate ===============
+Done! [148.440s CPU, 148.715s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============

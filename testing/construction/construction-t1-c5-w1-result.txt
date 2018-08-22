@@ -1,0 +1,85 @@
+/home/xixiyan/git/csc494/domains/construction/problems/construction-t1-c5-w1.pddl
+
+================ ./generalize ===============
+Done! [0.060s CPU, 0.063s wall-clock]
+
+================ ./solve ===============
+                  -{ General Statistics }-
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 19
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.02s
+              Using the policy: 0s
+          Just-in-case Repairs: 0.07s
+                Simulator time: 0s
+                    Total time: 0.07s
+
+
+
+Strong cyclic plan found.
+Peak memory: 13848 KB
+
+OK
+
+================ --translate ===============
+Done! [0.070s CPU, 0.068s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 102 step(s).
+Plan cost: 102
+Expanded 653 state(s).
+Reopened 0 state(s).
+Evaluated 654 state(s).
+Evaluations: 1308
+Generated 4567 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 654
+Int hash set load factor: 654/1024 = 0.638672
+Int hash set resizes: 10
+Search time: 0.0187668s
+Total time: 0.0228687s
+Solution found.
+Peak memory: 4884 KB
+
+search exit code: 0
+
+================ astar(lmcut()) ===============
+[g=9, 291 evaluated, 97 expanded, t=0.0241273s, 4496 KB]
+f = 34 [2531 evaluated, 818 expanded, t=0.18003s, 4632 KB]
+New best heuristic value for lmcut: 23
+[g=11, 2546 evaluated, 820 expanded, t=0.181134s, 4632 KB]
+New best heuristic value for lmcut: 22
+[g=12, 2553 evaluated, 821 expanded, t=0.181666s, 4632 KB]
+New best heuristic value for lmcut: 21
+[g=13, 2555 evaluated, 822 expanded, t=0.181834s, 4632 KB]
+New best heuristic value for lmcut: 20
+[g=14, 2557 evaluated, 823 expanded, t=0.182014s, 4632 KB]
+f = 35 [16590 evaluated, 3321 expanded, t=1.0804s, 5348 KB]
+f = 36 [28005 evaluated, 7284 expanded, t=1.88962s, 5748 KB]
+f = 37 [89580 evaluated, 26775 expanded, t=6.11027s, 8644 KB]
+f = 38 [524650 evaluated, 105460 expanded, t=34.0779s, 32648 KB]
+New best heuristic value for lmcut: 19
+[g=19, 524656 evaluated, 105461 expanded, t=34.0783s, 32648 KB]
+f = 39 [1378570 evaluated, 259795 expanded, 975 reopened, t=87.1597s, 68956 KB]
+f = 40 [2429650 evaluated, 613260 expanded, 1075 reopened, t=157.553s, 121224 KB]
+f = 41 [8179600 evaluated, 1875125 expanded, 1075 reopened, t=525.286s, 441828 KB]
+Peak memory: 461372 KB
+caught signal 15 -- exiting
