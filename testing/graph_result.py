@@ -31,7 +31,7 @@ lama_memory = []
 
 # TODO: CHANGE THIS FOR DIFFERENT DOMAIN
 def get_problem_size(problem_name):
-    size = re.findall("\d+", problem_name)[2]
+    size = re.findall("\d+", problem_name)[0]
     return int(size)
 
 def parse_file(filename):
@@ -45,7 +45,7 @@ def parse_file(filename):
     return result
 
 if __name__ == '__main__':
-    mypath = '/home/xiyan/git/csc494/testing/foo'
+    mypath = '/home/xiyan/git/csc494/testing/TEMP-RESULT'
     txtfiles = [f for f in os.listdir(mypath) if isfile(join(mypath, f))]
     all_data = []
     txtfiles.sort(key = lambda x: get_problem_size(x))
