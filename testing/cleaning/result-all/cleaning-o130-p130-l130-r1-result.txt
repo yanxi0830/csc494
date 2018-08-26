@@ -1,0 +1,62 @@
+/home/xiyan/git/csc494/domains//cleaning-garbage/problems/cleaning-o130-p130-l130-r1.pddl
+
+================ ./generalize ===============
+Done! [2.150s CPU, 2.165s wall-clock]
+
+================ ./solve ===============
+                  -{ General Statistics }-
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 10
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.01s
+              Using the policy: 0s
+          Just-in-case Repairs: 0.01s
+                Simulator time: 0s
+                    Total time: 0.01s
+
+
+
+Strong cyclic plan found.
+Peak memory: 3956 KB
+
+OK
+
+================ --translate ===============
+Done! [0.700s CPU, 0.697s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 780 step(s).
+Plan cost: 780
+Expanded 780 state(s).
+Reopened 0 state(s).
+Evaluated 781 state(s).
+Evaluations: 1562
+Generated 76635 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 781
+Int hash set load factor: 781/1024 = 0.762695
+Int hash set resizes: 10
+Search time: 0.277823s
+Total time: 5.5025s
+Solution found.
+Peak memory: 9580 KB
+
+search exit code: 0

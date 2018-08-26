@@ -93,6 +93,5 @@ if __name__ == '__main__':
         generate_instance(args.o, args.p, args.l, args.r)
     else:
         # Generate 10 instances with 1-3 robots, 10-100 organics, papers, plastic
-        for r in range(1, 4):
-            for i in range(1, 11):
-                generate_instance(i*10, i*10, i*10, r)
+        for i in range(1, 50):
+            generate_instance(i*10, i*10, i*10, 1)
