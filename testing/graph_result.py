@@ -16,7 +16,7 @@ PLAN_LENGTH = 45        # 6
 LAMA_FIRST_TIME = 57    # 7
 LAMA_MEMORY = 59        # 8
 
-IMPORTANT_LINES = [3, 12, 30, 35, 40, 45, 47, 59]
+IMPORTANT_LINES = [3, 12, 30, 35, 40, 45, 57, 59]
 
 problem_sizes = []
 generalize_times = []

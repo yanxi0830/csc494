@@ -4,10 +4,10 @@ echo 'Problem Instance = ' $(basename $2)
 
 RESULT=$(pwd)/$(basename $2 .pddl)-result.txt
 
-source activate py27
+# conda activate py27
 echo $2 > $RESULT
 
-source activate py27
+# conda activate py27
 cd ~/git/loom
 
 echo "RUNNING LOOM ./generalize"

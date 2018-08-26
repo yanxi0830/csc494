@@ -1,7 +1,7 @@
-/home/xiyan/git/csc494/domains//hamburger-strips/foo/hamburger-strips-p100-r1.pddl
+/home/xiyan/git/csc494/domains//hamburger-strips/problems/hamburger-strips-p100-r1.pddl
 
 ================ ./generalize ===============
-Done! [4.720s CPU, 4.717s wall-clock]
+Done! [3.480s CPU, 3.490s wall-clock]
 
 ================ ./solve ===============
                   -{ General Statistics }-
@@ -24,7 +24,7 @@ Done! [4.720s CPU, 4.717s wall-clock]
          Engine Initialization: 0s
                    Search Time: 0s
            Policy Construction: 0s
- Evaluating the policy quality: 0.01s
+ Evaluating the policy quality: 0s
               Using the policy: 0s
           Just-in-case Repairs: 0.02s
                 Simulator time: 0s
@@ -38,7 +38,7 @@ Peak memory: 4772 KB
 OK
 
 ================ --translate ===============
-Done! [5.860s CPU, 5.865s wall-clock]
+Done! [3.930s CPU, 3.942s wall-clock]
 
 translate exit code: 0
 
@@ -54,8 +54,8 @@ Dead ends: 0 state(s).
 Number of registered states: 26011
 Int hash set load factor: 26011/32768 = 0.793793
 Int hash set resizes: 15
-Search time: 47.0704s
-Total time: 52.9955s
+Search time: 24.6846s
+Total time: 27.8337s
 Solution found.
 Peak memory: 51040 KB
 

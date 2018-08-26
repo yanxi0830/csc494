@@ -123,7 +123,5 @@ if __name__ == '__main__':
         generate_instance(args.w, args.t, args.c)
     else:
         # Generate instances with 1-3 trucks, 1-10 workers, 1-20 composites
-        for t in range(1, 4):
-            for w in range(1, 11):
-                for c in range(1, 21):
-                    generate_instance(w, t, c)
+        for c in range(1, 101):
+            generate_instance(1, 1, c*2)

@@ -1,0 +1,62 @@
+/home/xiyan/git/csc494/domains//construction/problems/construction-t1-c34-w1.pddl
+
+================ ./generalize ===============
+Done! [0.630s CPU, 0.634s wall-clock]
+
+================ ./solve ===============
+                  -{ General Statistics }-
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 19
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.01s
+              Using the policy: 0s
+          Just-in-case Repairs: 0.06s
+                Simulator time: 0s
+                    Total time: 0.06s
+
+
+
+Strong cyclic plan found.
+Peak memory: 13848 KB
+
+OK
+
+================ --translate ===============
+Done! [0.600s CPU, 0.609s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 698 step(s).
+Plan cost: 698
+Expanded 19144 state(s).
+Reopened 0 state(s).
+Evaluated 19145 state(s).
+Evaluations: 38290
+Generated 431028 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 19145
+Int hash set load factor: 19145/32768 = 0.584259
+Int hash set resizes: 15
+Search time: 3.72163s
+Total time: 3.86198s
+Solution found.
+Peak memory: 23784 KB
+
+search exit code: 0
