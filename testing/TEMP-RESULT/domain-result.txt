@@ -1,0 +1,18 @@
+/home/xiyan/git/csc494/domains//logistics/problems/domain.pddl
+
+================ ./generalize ===============
+Parsing...
+
+================ ./solve ===============
+./solver/src/prp opt quantified-domain.pddl quantified-problem.pddl --jic-limit 18000 --trials 0 --forgetpolicy 0 --fullstate 0 --planlocal 1 --partial-planlocal 1 --plan-with-policy 1 --limit-planlocal 1 --detect-deadends 1 --generalize-deadends 1 --optimized-scd 0
+1. Running translator
+Second argument is not a file name: auto-detect domain file.
+Parsing...
+Failed!
+
+================ --translate ===============
+
+translate exit code: 30
+Driver aborting after translate
+
+================ --alias lama-first ===============

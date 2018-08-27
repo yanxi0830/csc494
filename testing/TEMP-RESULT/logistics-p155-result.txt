@@ -1,0 +1,62 @@
+/home/xiyan/git/csc494/domains//logistics/problems/logistics-p155.pddl
+
+================ ./generalize ===============
+Done! [0.390s CPU, 0.401s wall-clock]
+
+================ ./solve ===============
+                  -{ General Statistics }-
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 28
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0.15s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.05s
+              Using the policy: 0.04s
+          Just-in-case Repairs: 0.2s
+                Simulator time: 0s
+                    Total time: 0.2s
+
+
+
+Strong cyclic plan found.
+Peak memory: 13968 KB
+
+OK
+
+================ --translate ===============
+Done! [0.500s CPU, 0.500s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 939 step(s).
+Plan cost: 939
+Expanded 3191 state(s).
+Reopened 0 state(s).
+Evaluated 3192 state(s).
+Evaluations: 6384
+Generated 709096 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 3192
+Int hash set load factor: 3192/4096 = 0.779297
+Int hash set resizes: 12
+Search time: 1.59999s
+Total time: 2.10008s
+Solution found.
+Peak memory: 28084 KB
+
+search exit code: 0

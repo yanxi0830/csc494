@@ -103,5 +103,5 @@ if __name__ == '__main__':
     if args.p is not None:
         generate_instance(args.p)
     else:
-        for i in range(1, 21):
-            generate_instance(i)
+        for i in range(1, 201):
+            generate_instance(i*5)
