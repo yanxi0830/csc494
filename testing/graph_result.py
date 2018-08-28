@@ -31,7 +31,7 @@ lama_memory = []
 
 # TODO: CHANGE THIS FOR DIFFERENT DOMAIN
 def get_problem_size(problem_name):
-    size = re.findall("\d+", problem_name)[0]
+    size = re.findall("\d+", problem_name)[2]
     return int(size)
 
 def parse_file(filename):

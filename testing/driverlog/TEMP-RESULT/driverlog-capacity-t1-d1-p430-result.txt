@@ -1,0 +1,62 @@
+/home/xiyan/git/csc494/domains//driverlog-capacity/problems/driverlog-capacity-t1-d1-p430.pddl
+
+================ ./generalize ===============
+Done! [1.440s CPU, 1.435s wall-clock]
+
+================ ./solve ===============
+                  -{ General Statistics }-
+
+       Monotonicity violations: 0
+             Successful states: -nan +/- -nan
+                       Replans: -nan +/- -nan
+                       Actions: -nan +/- -nan
+            State-Action Pairs: 38
+  Forbidden State-Action Pairs: 0
+               Strongly Cyclic: True
+                  Policy Score: 1
+                     Succeeded: 0 / 0
+ Depth limit (of 1000) reached: 0 / 0
+
+
+                  -{ Timing Statistics }-
+
+        Regression Computation: 0s
+         Engine Initialization: 0s
+                   Search Time: 0.01s
+           Policy Construction: 0s
+ Evaluating the policy quality: 0.04s
+              Using the policy: 0.03s
+          Just-in-case Repairs: 0.05s
+                Simulator time: 0s
+                    Total time: 0.05s
+
+
+
+Strong cyclic plan found.
+Peak memory: 4320 KB
+
+OK
+
+================ --translate ===============
+Done! [1.230s CPU, 1.232s wall-clock]
+
+translate exit code: 0
+
+================ --alias lama-first ===============
+Plan length: 3445 step(s).
+Plan cost: 3445
+Expanded 217516 state(s).
+Reopened 0 state(s).
+Evaluated 217517 state(s).
+Evaluations: 435034
+Generated 1080644 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 217517
+Int hash set load factor: 217517/262144 = 0.829762
+Int hash set resizes: 18
+Search time: 152.75s
+Total time: 153.929s
+Solution found.
+Peak memory: 124348 KB
+
+search exit code: 0
