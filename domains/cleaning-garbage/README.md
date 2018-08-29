@@ -3,13 +3,13 @@
 ## Description
 
 ##### Initial States
-N books, M clothes, K garbage on the ground, X number of robots
+O organic waste, P paper waste, L plastic waste on the ground, X number of robots
 
 ##### Actions
 - `pick-up`: robot picks up an object on the ground
-- `put-to-shelf`: robot put an object it's holding to the shelf
-- `put-to-closet`: put object to the closet
-- `put-to-trash`: put object to the trash
+- `put-to-compost-bin`: robot put an object it's holding to the compost bin
+- `put-to-paper-bin`: put object to the paper bin
+- `put-to-plastic-bin`: put object to the plastic bin
 
 ##### Goal
-There is nothing left on the ground, all books must be on the shelf, all clothes must be in thee closet, and all garbage must be in the trash.
+There is nothing left on the ground, all organic waste in compost, all plastic waste in plastic bin, all paper waste in paper bin
