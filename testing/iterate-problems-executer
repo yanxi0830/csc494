@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo 'Domain = ' $1
+
+RESULT_DIR=~/git/csc494/testing/$1/result-executer
+DOMAINS_DIR=~/git/csc494/domains
+LOOM=~/git/loom
+
+# assume already has policy in loom
+
+# conda activate py27
+
+cd $LOOM
+
+for filename in $DOMAINS_DIR/$1/problems/*.pddl; do
+	# echo $filename
+	if [[ $filename != *domain.pddl ]]; then
+		# time the executer redirect to file
+		echo $filename
+		printf $(basename $filename) >> $RESULT_DIR/executer-times.txt
+		printf "\n" >> $RESULT_DIR/executer-times.txt
+		(time ./execute $filename | tail -1) >> $RESULT_DIR/executer-times.txt 2>&1
+	fi
+done

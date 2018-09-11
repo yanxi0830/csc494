@@ -1,0 +1,300 @@
+cleaning-o100-p100-l100-r1.pddl
+;; length: 600
+
+real	0m1.476s
+user	0m1.471s
+sys	0m0.004s
+cleaning-o10-p10-l10-r1.pddl
+;; length: 60
+
+real	0m0.059s
+user	0m0.050s
+sys	0m0.010s
+cleaning-o110-p110-l110-r1.pddl
+;; length: 660
+
+real	0m1.775s
+user	0m1.764s
+sys	0m0.009s
+cleaning-o120-p120-l120-r1.pddl
+;; length: 720
+
+real	0m2.102s
+user	0m2.091s
+sys	0m0.010s
+cleaning-o130-p130-l130-r1.pddl
+;; length: 780
+
+real	0m2.454s
+user	0m2.444s
+sys	0m0.008s
+cleaning-o140-p140-l140-r1.pddl
+;; length: 840
+
+real	0m2.862s
+user	0m2.856s
+sys	0m0.002s
+cleaning-o150-p150-l150-r1.pddl
+;; length: 900
+
+real	0m3.251s
+user	0m3.243s
+sys	0m0.005s
+cleaning-o160-p160-l160-r1.pddl
+;; length: 960
+
+real	0m3.708s
+user	0m3.698s
+sys	0m0.007s
+cleaning-o170-p170-l170-r1.pddl
+;; length: 1020
+
+real	0m4.277s
+user	0m4.258s
+sys	0m0.010s
+cleaning-o180-p180-l180-r1.pddl
+;; length: 1080
+
+real	0m4.780s
+user	0m4.767s
+sys	0m0.007s
+cleaning-o190-p190-l190-r1.pddl
+;; length: 1140
+
+real	0m5.321s
+user	0m5.297s
+sys	0m0.014s
+cleaning-o200-p200-l200-r1.pddl
+;; length: 1200
+
+real	0m5.907s
+user	0m5.894s
+sys	0m0.007s
+cleaning-o20-p20-l20-r1.pddl
+;; length: 120
+
+real	0m0.107s
+user	0m0.104s
+sys	0m0.004s
+cleaning-o210-p210-l210-r1.pddl
+;; length: 1260
+
+real	0m6.529s
+user	0m6.515s
+sys	0m0.006s
+cleaning-o220-p220-l220-r1.pddl
+;; length: 1320
+
+real	0m7.176s
+user	0m7.161s
+sys	0m0.006s
+cleaning-o230-p230-l230-r1.pddl
+;; length: 1380
+
+real	0m8.004s
+user	0m7.987s
+sys	0m0.007s
+cleaning-o240-p240-l240-r1.pddl
+;; length: 1440
+
+real	0m8.596s
+user	0m8.579s
+sys	0m0.006s
+cleaning-o250-p250-l250-r1.pddl
+;; length: 1500
+
+real	0m9.395s
+user	0m9.378s
+sys	0m0.006s
+cleaning-o260-p260-l260-r1.pddl
+;; length: 1560
+
+real	0m10.560s
+user	0m10.533s
+sys	0m0.010s
+cleaning-o270-p270-l270-r1.pddl
+;; length: 1620
+
+real	0m11.507s
+user	0m11.479s
+sys	0m0.011s
+cleaning-o280-p280-l280-r1.pddl
+;; length: 1680
+
+real	0m12.476s
+user	0m12.441s
+sys	0m0.012s
+cleaning-o290-p290-l290-r1.pddl
+;; length: 1740
+
+real	0m13.665s
+user	0m13.633s
+sys	0m0.009s
+cleaning-o300-p300-l300-r1.pddl
+;; length: 1800
+
+real	0m14.902s
+user	0m14.855s
+sys	0m0.016s
+cleaning-o30-p30-l30-r1.pddl
+;; length: 180
+
+real	0m0.189s
+user	0m0.186s
+sys	0m0.004s
+cleaning-o310-p310-l310-r1.pddl
+;; length: 1860
+
+real	0m15.529s
+user	0m15.494s
+sys	0m0.013s
+cleaning-o320-p320-l320-r1.pddl
+;; length: 1920
+
+real	0m17.025s
+user	0m16.987s
+sys	0m0.011s
+cleaning-o330-p330-l330-r1.pddl
+;; length: 1980
+
+real	0m17.565s
+user	0m17.531s
+sys	0m0.008s
+cleaning-o340-p340-l340-r1.pddl
+;; length: 2040
+
+real	0m18.874s
+user	0m18.837s
+sys	0m0.012s
+cleaning-o350-p350-l350-r1.pddl
+;; length: 2100
+
+real	0m19.969s
+user	0m19.932s
+sys	0m0.007s
+cleaning-o360-p360-l360-r1.pddl
+;; length: 2160
+
+real	0m21.338s
+user	0m21.296s
+sys	0m0.012s
+cleaning-o370-p370-l370-r1.pddl
+;; length: 2220
+
+real	0m22.513s
+user	0m22.476s
+sys	0m0.005s
+cleaning-o380-p380-l380-r1.pddl
+;; length: 2280
+
+real	0m23.979s
+user	0m23.940s
+sys	0m0.007s
+cleaning-o390-p390-l390-r1.pddl
+;; length: 2340
+
+real	0m25.408s
+user	0m25.356s
+sys	0m0.012s
+cleaning-o400-p400-l400-r1.pddl
+;; length: 2400
+
+real	0m26.805s
+user	0m26.765s
+sys	0m0.006s
+cleaning-o40-p40-l40-r1.pddl
+;; length: 240
+
+real	0m0.286s
+user	0m0.280s
+sys	0m0.006s
+cleaning-o410-p410-l410-r1.pddl
+;; length: 2460
+
+real	0m28.007s
+user	0m27.954s
+sys	0m0.013s
+cleaning-o420-p420-l420-r1.pddl
+;; length: 2520
+
+real	0m29.915s
+user	0m29.856s
+sys	0m0.018s
+cleaning-o430-p430-l430-r1.pddl
+;; length: 2580
+
+real	0m31.637s
+user	0m31.583s
+sys	0m0.006s
+cleaning-o440-p440-l440-r1.pddl
+;; length: 2640
+
+real	0m33.559s
+user	0m33.496s
+sys	0m0.007s
+cleaning-o450-p450-l450-r1.pddl
+;; length: 2700
+
+real	0m35.686s
+user	0m35.612s
+sys	0m0.016s
+cleaning-o460-p460-l460-r1.pddl
+;; length: 2760
+
+real	0m36.766s
+user	0m36.700s
+sys	0m0.007s
+cleaning-o470-p470-l470-r1.pddl
+;; length: 2820
+
+real	0m37.796s
+user	0m37.738s
+sys	0m0.009s
+cleaning-o480-p480-l480-r1.pddl
+;; length: 2880
+
+real	0m39.385s
+user	0m39.325s
+sys	0m0.010s
+cleaning-o490-p490-l490-r1.pddl
+;; length: 2940
+
+real	0m41.906s
+user	0m41.841s
+sys	0m0.005s
+cleaning-o500-p500-l500-r1.pddl
+;; length: 3000
+
+real	0m44.543s
+user	0m44.470s
+sys	0m0.009s
+cleaning-o50-p50-l50-r1.pddl
+;; length: 300
+
+real	0m0.429s
+user	0m0.420s
+sys	0m0.008s
+cleaning-o60-p60-l60-r1.pddl
+;; length: 360
+
+real	0m0.580s
+user	0m0.575s
+sys	0m0.005s
+cleaning-o70-p70-l70-r1.pddl
+;; length: 420
+
+real	0m0.758s
+user	0m0.752s
+sys	0m0.006s
+cleaning-o80-p80-l80-r1.pddl
+;; length: 480
+
+real	0m0.978s
+user	0m0.967s
+sys	0m0.010s
+cleaning-o90-p90-l90-r1.pddl
+;; length: 540
+
+real	0m1.228s
+user	0m1.218s
+sys	0m0.009s
