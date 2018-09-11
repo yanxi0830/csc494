@@ -22,7 +22,7 @@
   )
 
   ; Fixed locations
-  (:constants L1 L2 L3 D G1 G2 P1 P2 P3 P4 P5 P6 - location)
+  ; (:constants L1 L2 L3 D G1 G2 P1 P2 P3 P4 P5 P6 - location)
 
   (:action load-truck
     :parameters (?p - package ?t - truck ?l - location ?n1 ?n2 - capacity-number)

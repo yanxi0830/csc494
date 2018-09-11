@@ -76,12 +76,19 @@ def format_problem(t, d, p, name):
 
     # goal state
     acc.append('\t(:goal (and')
-    for p in packages:
-        i = random.randint(0, 10)
+    # for p in packages:
+    #     i = random.randint(0, 10)
+    #     if i % 2 == 0:
+    #         acc.append('\t\t(at {} G1)'.format(p))
+    #     else:
+    #         acc.append('\t\t(at {} G2)'.format(p))
+    for i in range(0, len(packages)):
+        o = packages[i]
         if i % 2 == 0:
-            acc.append('\t\t(at {} G1)'.format(p))
+            acc.append('\t\t(at {} G1)'.format(o))
         else:
-            acc.append('\t\t(at {} G2)'.format(p))
+            acc.append('\t\t(at {} G2)'.format(o))
+
     for d in drivers:
         acc.append('\t\t(at {} D)'.format(d))
     for t in trucks:

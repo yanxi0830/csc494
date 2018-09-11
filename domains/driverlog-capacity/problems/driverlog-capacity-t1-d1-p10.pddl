@@ -1,6 +1,7 @@
 (define (problem driverlog-capacity-t1-d1-p10)
 	(:domain driverlog-capacity)
 	(:objects
+		L1 L2 L3 D G1 G2 P1 P2 P3 P4 P5 P6 - location
 		driver-1 - driver
 		truck-1 - truck
 		package-1 package-2 package-3 package-4 package-5 package-6 package-7 package-8 package-9 package-10 - package
@@ -61,15 +62,15 @@
 	)
 	(:goal (and
 		(at package-1 G1)
-		(at package-2 G1)
-		(at package-3 G2)
+		(at package-2 G2)
+		(at package-3 G1)
 		(at package-4 G2)
 		(at package-5 G1)
-		(at package-6 G1)
+		(at package-6 G2)
 		(at package-7 G1)
-		(at package-8 G1)
-		(at package-9 G2)
-		(at package-10 G1)
+		(at package-8 G2)
+		(at package-9 G1)
+		(at package-10 G2)
 		(at driver-1 D)
 		(at truck-1 D)
 		)
