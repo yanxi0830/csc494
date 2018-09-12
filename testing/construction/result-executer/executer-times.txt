@@ -1,0 +1,372 @@
+construction-t1-c100-w1.pddl
+;; length: 1800
+
+real	0m7.157s
+user	0m7.136s
+sys	0m0.014s
+construction-t1-c102-w1.pddl
+;; length: 1836
+
+real	0m7.656s
+user	0m7.634s
+sys	0m0.009s
+construction-t1-c104-w1.pddl
+;; length: 1872
+
+real	0m7.861s
+user	0m7.835s
+sys	0m0.009s
+construction-t1-c106-w1.pddl
+;; length: 1908
+
+real	0m8.249s
+user	0m8.227s
+sys	0m0.006s
+construction-t1-c108-w1.pddl
+;; length: 1944
+
+real	0m8.421s
+user	0m8.399s
+sys	0m0.008s
+construction-t1-c10-w1.pddl
+;; length: 180
+
+real	0m0.163s
+user	0m0.156s
+sys	0m0.008s
+construction-t1-c110-w1.pddl
+;; length: 1980
+
+real	0m8.691s
+user	0m8.668s
+sys	0m0.009s
+construction-t1-c112-w1.pddl
+;; length: 2016
+
+real	0m8.970s
+user	0m8.953s
+sys	0m0.005s
+construction-t1-c114-w1.pddl
+;; length: 2052
+
+real	0m9.364s
+user	0m9.343s
+sys	0m0.007s
+construction-t1-c116-w1.pddl
+;; length: 2088
+
+real	0m9.827s
+user	0m9.800s
+sys	0m0.011s
+construction-t1-c118-w1.pddl
+;; length: 2124
+
+real	0m10.182s
+user	0m10.160s
+sys	0m0.006s
+construction-t1-c120-w1.pddl
+;; length: 2160
+
+real	0m10.593s
+user	0m10.557s
+sys	0m0.010s
+construction-t1-c122-w1.pddl
+;; length: 2196
+
+real	0m10.606s
+user	0m10.584s
+sys	0m0.005s
+construction-t1-c124-w1.pddl
+;; length: 2232
+
+real	0m11.087s
+user	0m11.064s
+sys	0m0.006s
+construction-t1-c12-w1.pddl
+;; length: 216
+
+real	0m0.193s
+user	0m0.189s
+sys	0m0.004s
+construction-t1-c14-w1.pddl
+;; length: 252
+
+real	0m0.240s
+user	0m0.230s
+sys	0m0.010s
+construction-t1-c16-w1.pddl
+;; length: 288
+
+real	0m0.284s
+user	0m0.275s
+sys	0m0.009s
+construction-t1-c18-w1.pddl
+;; length: 324
+
+real	0m0.345s
+user	0m0.338s
+sys	0m0.007s
+construction-t1-c20-w1.pddl
+;; length: 360
+
+real	0m0.407s
+user	0m0.400s
+sys	0m0.006s
+construction-t1-c22-w1.pddl
+;; length: 396
+
+real	0m0.476s
+user	0m0.469s
+sys	0m0.007s
+construction-t1-c24-w1.pddl
+;; length: 432
+
+real	0m0.527s
+user	0m0.519s
+sys	0m0.008s
+construction-t1-c26-w1.pddl
+;; length: 468
+
+real	0m0.633s
+user	0m0.626s
+sys	0m0.006s
+construction-t1-c28-w1.pddl
+;; length: 504
+
+real	0m0.724s
+user	0m0.716s
+sys	0m0.006s
+construction-t1-c2-w1.pddl
+;; length: 36
+
+real	0m0.058s
+user	0m0.053s
+sys	0m0.005s
+construction-t1-c30-w1.pddl
+;; length: 540
+
+real	0m0.785s
+user	0m0.774s
+sys	0m0.009s
+construction-t1-c32-w1.pddl
+;; length: 576
+
+real	0m0.889s
+user	0m0.880s
+sys	0m0.007s
+construction-t1-c34-w1.pddl
+;; length: 612
+
+real	0m0.951s
+user	0m0.942s
+sys	0m0.008s
+construction-t1-c36-w1.pddl
+;; length: 648
+
+real	0m1.058s
+user	0m1.044s
+sys	0m0.012s
+construction-t1-c38-w1.pddl
+;; length: 684
+
+real	0m1.210s
+user	0m1.205s
+sys	0m0.004s
+construction-t1-c40-w1.pddl
+;; length: 720
+
+real	0m1.258s
+user	0m1.252s
+sys	0m0.005s
+construction-t1-c42-w1.pddl
+;; length: 756
+
+real	0m1.373s
+user	0m1.365s
+sys	0m0.007s
+construction-t1-c44-w1.pddl
+;; length: 792
+
+real	0m1.602s
+user	0m1.590s
+sys	0m0.008s
+construction-t1-c46-w1.pddl
+;; length: 828
+
+real	0m1.694s
+user	0m1.687s
+sys	0m0.004s
+construction-t1-c48-w1.pddl
+;; length: 864
+
+real	0m1.846s
+user	0m1.833s
+sys	0m0.011s
+construction-t1-c4-w1.pddl
+;; length: 72
+
+real	0m0.072s
+user	0m0.064s
+sys	0m0.009s
+construction-t1-c50-w1.pddl
+;; length: 900
+
+real	0m1.936s
+user	0m1.929s
+sys	0m0.004s
+construction-t1-c52-w1.pddl
+;; length: 936
+
+real	0m2.134s
+user	0m2.122s
+sys	0m0.008s
+construction-t1-c54-w1.pddl
+;; length: 972
+
+real	0m2.178s
+user	0m2.169s
+sys	0m0.006s
+construction-t1-c56-w1.pddl
+;; length: 1008
+
+real	0m2.380s
+user	0m2.366s
+sys	0m0.008s
+construction-t1-c58-w1.pddl
+;; length: 1044
+
+real	0m2.546s
+user	0m2.539s
+sys	0m0.005s
+construction-t1-c60-w1.pddl
+;; length: 1080
+
+real	0m2.716s
+user	0m2.710s
+sys	0m0.002s
+construction-t1-c62-w1.pddl
+;; length: 1116
+
+real	0m2.852s
+user	0m2.840s
+sys	0m0.007s
+construction-t1-c64-w1.pddl
+;; length: 1152
+
+real	0m3.094s
+user	0m3.081s
+sys	0m0.008s
+construction-t1-c66-w1.pddl
+;; length: 1188
+
+real	0m3.199s
+user	0m3.189s
+sys	0m0.006s
+construction-t1-c68-w1.pddl
+;; length: 1224
+
+real	0m3.469s
+user	0m3.458s
+sys	0m0.005s
+construction-t1-c6-w1.pddl
+;; length: 108
+
+real	0m0.091s
+user	0m0.083s
+sys	0m0.009s
+construction-t1-c70-w1.pddl
+;; length: 1260
+
+real	0m3.720s
+user	0m3.702s
+sys	0m0.010s
+construction-t1-c72-w1.pddl
+;; length: 1296
+
+real	0m3.784s
+user	0m3.770s
+sys	0m0.009s
+construction-t1-c74-w1.pddl
+;; length: 1332
+
+real	0m4.160s
+user	0m4.146s
+sys	0m0.007s
+construction-t1-c76-w1.pddl
+;; length: 1368
+
+real	0m4.257s
+user	0m4.244s
+sys	0m0.007s
+construction-t1-c78-w1.pddl
+;; length: 1404
+
+real	0m4.493s
+user	0m4.469s
+sys	0m0.014s
+construction-t1-c80-w1.pddl
+;; length: 1440
+
+real	0m4.679s
+user	0m4.652s
+sys	0m0.014s
+construction-t1-c82-w1.pddl
+;; length: 1476
+
+real	0m4.958s
+user	0m4.939s
+sys	0m0.010s
+construction-t1-c84-w1.pddl
+;; length: 1512
+
+real	0m5.126s
+user	0m5.110s
+sys	0m0.009s
+construction-t1-c86-w1.pddl
+;; length: 1548
+
+real	0m5.431s
+user	0m5.412s
+sys	0m0.008s
+construction-t1-c88-w1.pddl
+;; length: 1584
+
+real	0m5.592s
+user	0m5.573s
+sys	0m0.010s
+construction-t1-c8-w1.pddl
+;; length: 144
+
+real	0m0.115s
+user	0m0.107s
+sys	0m0.009s
+construction-t1-c90-w1.pddl
+;; length: 1620
+
+real	0m5.712s
+user	0m5.696s
+sys	0m0.010s
+construction-t1-c92-w1.pddl
+;; length: 1656
+
+real	0m5.931s
+user	0m5.917s
+sys	0m0.007s
+construction-t1-c94-w1.pddl
+;; length: 1692
+
+real	0m6.218s
+user	0m6.202s
+sys	0m0.007s
+construction-t1-c96-w1.pddl
+;; length: 1728
+
+real	0m6.604s
+user	0m6.583s
+sys	0m0.011s
+construction-t1-c98-w1.pddl
+;; length: 1764
+
+real	0m6.878s
+user	0m6.860s
+sys	0m0.008s

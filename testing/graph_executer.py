@@ -6,6 +6,14 @@ import os
 from os.path import isfile, join
 import re
 import numpy as np
+import argparse
+
+parser = argparse.ArgumentParser(
+    description='graph time v.s. number of problems'
+)
+parser.add_argument('--domain', type=str, help='domain')
+
+args = parser.parse_args()
 
 GENERALIZE_TIME = 3     # 1
 POLICY_LENGTH = 12      # 2
@@ -20,8 +28,9 @@ IMPORTANT_LINES = [3, 12, 30, 35, 40, 45, 57, 59]
 
 # TODO: CHANGE THIS FOR DIFFERENT DOMAIN
 def get_problem_size(problem_name):
-    size = re.findall("\d+", problem_name)[2]
+    size = re.findall("\d+", problem_name)[1]
     return int(size)
+
 
 def parse_file(filename):
     result = []
@@ -52,8 +61,14 @@ def parse_exec_file(filename):
     return [x[1] for x in result]
 
 if __name__ == '__main__':
-    lamapath = '/home/xiyan/git/csc494/testing/cleaning/result-all'
-    execpath = '/home/xiyan/git/csc494/testing/cleaning/result-executer/executer-times.txt'
+    if args.domain is not None:
+        print(args.domain)
+        lamapath = '/home/xiyan/git/csc494/testing/{}/result-all'.format(args.domain)
+        execpath = '/home/xiyan/git/csc494/testing/{}/result-executer/executer-times.txt'.format(args.domain)
+    else:
+        print('no domain provided')
+        exit(1)
+
     txtfiles = [f for f in os.listdir(lamapath) if isfile(join(lamapath, f))]
     txtfiles.sort(key = lambda x: get_problem_size(x))
 
@@ -87,10 +102,10 @@ if __name__ == '__main__':
 
     plt.plot(num_problems, loom_agg_times, label='LOOM')
     plt.plot(num_problems, lama_agg_times, label='LAMA-FIRST')
-    plt.title('Time v.s. Number of Problems')
+    plt.title('Time v.s. Number of Problems ({})'.format(args.domain))
     plt.xlabel('Number of Problems')
     plt.ylabel('Time (s)')
     plt.legend()
     plt.tight_layout()
-    plt.savefig('time-num-probs')
+    plt.savefig('{}-time-num-probs'.format(args.domain))
     plt.show()

@@ -1,0 +1,727 @@
+logistics-p1000.pddl
+;; length: 6009
+
+real	4m33.715s
+user	4m33.166s
+sys	0m0.096s
+logistics-p100.pddl
+;; length: 609
+
+real	0m3.065s
+user	0m3.044s
+sys	0m0.006s
+logistics-p105.pddl
+;; length: 639
+
+real	0m3.357s
+user	0m3.348s
+sys	0m0.006s
+logistics-p10.pddl
+;; length: 69
+
+real	0m0.111s
+user	0m0.104s
+sys	0m0.008s
+logistics-p110.pddl
+;; length: 669
+
+real	0m3.702s
+user	0m3.686s
+sys	0m0.009s
+logistics-p115.pddl
+;; length: 699
+
+real	0m3.982s
+user	0m3.970s
+sys	0m0.007s
+logistics-p120.pddl
+;; length: 729
+
+real	0m4.262s
+user	0m4.249s
+sys	0m0.008s
+logistics-p125.pddl
+;; length: 759
+
+real	0m4.702s
+user	0m4.689s
+sys	0m0.007s
+logistics-p130.pddl
+;; length: 789
+
+real	0m4.966s
+user	0m4.954s
+sys	0m0.006s
+logistics-p135.pddl
+;; length: 819
+
+real	0m5.452s
+user	0m5.432s
+sys	0m0.012s
+logistics-p140.pddl
+;; length: 849
+
+real	0m6.103s
+user	0m6.047s
+sys	0m0.009s
+logistics-p145.pddl
+;; length: 879
+
+real	0m6.412s
+user	0m6.386s
+sys	0m0.008s
+logistics-p150.pddl
+;; length: 909
+
+real	0m6.750s
+user	0m6.726s
+sys	0m0.012s
+logistics-p155.pddl
+;; length: 939
+
+real	0m7.267s
+user	0m7.248s
+sys	0m0.006s
+logistics-p15.pddl
+;; length: 99
+
+real	0m0.163s
+user	0m0.156s
+sys	0m0.007s
+logistics-p160.pddl
+;; length: 969
+
+real	0m7.421s
+user	0m7.405s
+sys	0m0.007s
+logistics-p165.pddl
+;; length: 999
+
+real	0m7.890s
+user	0m7.875s
+sys	0m0.008s
+logistics-p170.pddl
+;; length: 1029
+
+real	0m8.275s
+user	0m8.259s
+sys	0m0.006s
+logistics-p175.pddl
+;; length: 1059
+
+real	0m8.573s
+user	0m8.527s
+sys	0m0.018s
+logistics-p180.pddl
+;; length: 1089
+
+real	0m8.959s
+user	0m8.941s
+sys	0m0.007s
+logistics-p185.pddl
+;; length: 1119
+
+real	0m9.589s
+user	0m9.571s
+sys	0m0.006s
+logistics-p190.pddl
+;; length: 1149
+
+real	0m10.077s
+user	0m10.053s
+sys	0m0.010s
+logistics-p195.pddl
+;; length: 1179
+
+real	0m11.302s
+user	0m11.281s
+sys	0m0.008s
+logistics-p200.pddl
+;; length: 1209
+
+real	0m10.873s
+user	0m10.852s
+sys	0m0.007s
+logistics-p205.pddl
+;; length: 1239
+
+real	0m11.555s
+user	0m11.536s
+sys	0m0.006s
+logistics-p20.pddl
+;; length: 129
+
+real	0m0.216s
+user	0m0.205s
+sys	0m0.011s
+logistics-p210.pddl
+;; length: 1269
+
+real	0m12.175s
+user	0m12.156s
+sys	0m0.005s
+logistics-p215.pddl
+;; length: 1299
+
+real	0m12.616s
+user	0m12.596s
+sys	0m0.006s
+logistics-p220.pddl
+;; length: 1329
+
+real	0m13.205s
+user	0m13.177s
+sys	0m0.011s
+logistics-p225.pddl
+;; length: 1359
+
+real	0m13.885s
+user	0m13.855s
+sys	0m0.010s
+logistics-p230.pddl
+;; length: 1389
+
+real	0m14.498s
+user	0m14.454s
+sys	0m0.014s
+logistics-p235.pddl
+;; length: 1419
+
+real	0m15.033s
+user	0m15.005s
+sys	0m0.010s
+logistics-p240.pddl
+;; length: 1449
+
+real	0m15.530s
+user	0m15.500s
+sys	0m0.010s
+logistics-p245.pddl
+;; length: 1479
+
+real	0m16.103s
+user	0m16.076s
+sys	0m0.009s
+logistics-p250.pddl
+;; length: 1509
+
+real	0m16.807s
+user	0m16.781s
+sys	0m0.005s
+logistics-p255.pddl
+;; length: 1539
+
+real	0m17.430s
+user	0m17.384s
+sys	0m0.017s
+logistics-p25.pddl
+;; length: 159
+
+real	0m0.291s
+user	0m0.286s
+sys	0m0.005s
+logistics-p260.pddl
+;; length: 1569
+
+real	0m18.110s
+user	0m18.081s
+sys	0m0.006s
+logistics-p265.pddl
+;; length: 1599
+
+real	0m19.021s
+user	0m18.983s
+sys	0m0.010s
+logistics-p270.pddl
+;; length: 1629
+
+real	0m19.593s
+user	0m19.556s
+sys	0m0.014s
+logistics-p275.pddl
+;; length: 1659
+
+real	0m20.211s
+user	0m20.182s
+sys	0m0.006s
+logistics-p280.pddl
+;; length: 1689
+
+real	0m21.824s
+user	0m21.789s
+sys	0m0.005s
+logistics-p285.pddl
+;; length: 1719
+
+real	0m22.769s
+user	0m22.727s
+sys	0m0.006s
+logistics-p290.pddl
+;; length: 1749
+
+real	0m22.698s
+user	0m22.662s
+sys	0m0.006s
+logistics-p295.pddl
+;; length: 1779
+
+real	0m24.067s
+user	0m24.028s
+sys	0m0.004s
+logistics-p300.pddl
+;; length: 1809
+
+real	0m24.119s
+user	0m24.041s
+sys	0m0.029s
+logistics-p305.pddl
+;; length: 1839
+
+real	0m26.568s
+user	0m26.180s
+sys	0m0.172s
+logistics-p30.pddl
+;; length: 189
+
+real	0m0.421s
+user	0m0.411s
+sys	0m0.006s
+logistics-p310.pddl
+;; length: 1869
+
+real	0m28.270s
+user	0m28.197s
+sys	0m0.009s
+logistics-p315.pddl
+;; length: 1899
+
+real	0m28.788s
+user	0m28.694s
+sys	0m0.014s
+logistics-p320.pddl
+;; length: 1929
+
+real	0m30.224s
+user	0m29.630s
+sys	0m0.258s
+logistics-p325.pddl
+;; length: 1959
+
+real	0m30.944s
+user	0m30.880s
+sys	0m0.006s
+logistics-p330.pddl
+;; length: 1989
+
+real	0m31.775s
+user	0m31.710s
+sys	0m0.007s
+logistics-p335.pddl
+;; length: 2019
+
+real	0m32.618s
+user	0m32.545s
+sys	0m0.009s
+logistics-p340.pddl
+;; length: 2049
+
+real	0m33.470s
+user	0m33.395s
+sys	0m0.013s
+logistics-p345.pddl
+;; length: 2079
+
+real	0m34.320s
+user	0m34.246s
+sys	0m0.009s
+logistics-p350.pddl
+;; length: 2109
+
+real	0m35.495s
+user	0m35.425s
+sys	0m0.004s
+logistics-p355.pddl
+;; length: 2139
+
+real	0m36.463s
+user	0m36.336s
+sys	0m0.027s
+logistics-p35.pddl
+;; length: 219
+
+real	0m0.511s
+user	0m0.508s
+sys	0m0.003s
+logistics-p360.pddl
+;; length: 2169
+
+real	0m38.366s
+user	0m38.221s
+sys	0m0.013s
+logistics-p365.pddl
+;; length: 2199
+
+real	0m38.335s
+user	0m38.261s
+sys	0m0.007s
+logistics-p370.pddl
+;; length: 2229
+
+real	0m39.469s
+user	0m39.389s
+sys	0m0.007s
+logistics-p375.pddl
+;; length: 2259
+
+real	0m39.909s
+user	0m39.836s
+sys	0m0.005s
+logistics-p380.pddl
+;; length: 2289
+
+real	0m41.194s
+user	0m41.113s
+sys	0m0.010s
+logistics-p385.pddl
+;; length: 2319
+
+real	0m41.808s
+user	0m41.736s
+sys	0m0.010s
+logistics-p390.pddl
+;; length: 2349
+
+real	0m41.930s
+user	0m41.848s
+sys	0m0.007s
+logistics-p395.pddl
+;; length: 2379
+
+real	0m43.658s
+user	0m43.574s
+sys	0m0.010s
+logistics-p400.pddl
+;; length: 2409
+
+real	0m43.876s
+user	0m43.805s
+sys	0m0.008s
+logistics-p405.pddl
+;; length: 2439
+
+real	0m46.202s
+user	0m46.115s
+sys	0m0.011s
+logistics-p40.pddl
+;; length: 249
+
+real	0m0.627s
+user	0m0.611s
+sys	0m0.005s
+logistics-p410.pddl
+;; length: 2469
+
+real	0m46.427s
+user	0m46.346s
+sys	0m0.008s
+logistics-p415.pddl
+;; length: 2499
+
+real	0m47.674s
+user	0m47.568s
+sys	0m0.008s
+logistics-p420.pddl
+;; length: 2529
+
+real	0m49.679s
+user	0m49.589s
+sys	0m0.009s
+logistics-p425.pddl
+;; length: 2559
+
+real	0m51.259s
+user	0m51.104s
+sys	0m0.017s
+logistics-p430.pddl
+;; length: 2589
+
+real	0m53.743s
+user	0m53.628s
+sys	0m0.009s
+logistics-p435.pddl
+;; length: 2619
+
+real	0m54.668s
+user	0m54.558s
+sys	0m0.006s
+logistics-p440.pddl
+;; length: 2649
+
+real	0m56.704s
+user	0m56.583s
+sys	0m0.005s
+logistics-p445.pddl
+;; length: 2679
+
+real	0m58.218s
+user	0m58.046s
+sys	0m0.021s
+logistics-p450.pddl
+;; length: 2709
+
+real	0m58.911s
+user	0m58.790s
+sys	0m0.006s
+logistics-p455.pddl
+;; length: 2739
+
+real	1m1.371s
+user	1m1.186s
+sys	0m0.015s
+logistics-p45.pddl
+;; length: 279
+
+real	0m0.797s
+user	0m0.784s
+sys	0m0.006s
+logistics-p460.pddl
+;; length: 2769
+
+real	1m3.901s
+user	1m2.364s
+sys	0m0.657s
+logistics-p465.pddl
+;; length: 2799
+
+real	1m3.114s
+user	1m2.967s
+sys	0m0.010s
+logistics-p470.pddl
+;; length: 2829
+
+real	1m5.935s
+user	1m5.762s
+sys	0m0.008s
+logistics-p475.pddl
+;; length: 2859
+
+real	1m8.373s
+user	1m8.185s
+sys	0m0.008s
+logistics-p480.pddl
+;; length: 2889
+
+real	1m9.417s
+user	1m9.211s
+sys	0m0.018s
+logistics-p485.pddl
+;; length: 2919
+
+real	1m10.172s
+user	1m9.909s
+sys	0m0.031s
+logistics-p490.pddl
+;; length: 2949
+
+real	1m9.648s
+user	1m9.498s
+sys	0m0.011s
+logistics-p495.pddl
+;; length: 2979
+
+real	1m7.270s
+user	1m7.166s
+sys	0m0.009s
+logistics-p500.pddl
+;; length: 3009
+
+real	1m9.309s
+user	1m9.219s
+sys	0m0.007s
+logistics-p505.pddl
+;; length: 3039
+
+real	1m9.574s
+user	1m9.473s
+sys	0m0.008s
+logistics-p50.pddl
+;; length: 309
+
+real	0m0.867s
+user	0m0.858s
+sys	0m0.009s
+logistics-p510.pddl
+;; length: 3069
+
+real	1m10.775s
+user	1m10.672s
+sys	0m0.010s
+logistics-p515.pddl
+;; length: 3099
+
+real	1m12.425s
+user	1m12.321s
+sys	0m0.007s
+logistics-p520.pddl
+;; length: 3129
+
+real	1m13.560s
+user	1m13.459s
+sys	0m0.009s
+logistics-p525.pddl
+;; length: 3159
+
+real	1m15.562s
+user	1m15.462s
+sys	0m0.007s
+logistics-p530.pddl
+;; length: 3189
+
+real	1m16.680s
+user	1m16.568s
+sys	0m0.010s
+logistics-p535.pddl
+;; length: 3219
+
+real	1m18.092s
+user	1m17.989s
+sys	0m0.009s
+logistics-p540.pddl
+;; length: 3249
+
+real	1m19.598s
+user	1m19.499s
+sys	0m0.006s
+logistics-p545.pddl
+;; length: 3279
+
+real	1m20.492s
+user	1m20.381s
+sys	0m0.010s
+logistics-p550.pddl
+;; length: 3309
+
+real	1m22.454s
+user	1m22.347s
+sys	0m0.009s
+logistics-p555.pddl
+;; length: 3339
+
+real	1m24.821s
+user	1m24.712s
+sys	0m0.008s
+logistics-p55.pddl
+;; length: 339
+
+real	0m1.032s
+user	0m1.026s
+sys	0m0.005s
+logistics-p560.pddl
+;; length: 3369
+
+real	1m25.579s
+user	1m25.458s
+sys	0m0.014s
+logistics-p565.pddl
+;; length: 3399
+
+real	1m26.707s
+user	1m26.590s
+sys	0m0.003s
+logistics-p570.pddl
+;; length: 3429
+
+real	1m29.645s
+user	1m29.527s
+sys	0m0.007s
+logistics-p575.pddl
+;; length: 3459
+
+real	1m30.264s
+user	1m30.137s
+sys	0m0.015s
+logistics-p580.pddl
+;; length: 3489
+
+real	1m32.232s
+user	1m32.110s
+sys	0m0.010s
+logistics-p585.pddl
+;; length: 3519
+
+real	1m34.352s
+user	1m34.237s
+sys	0m0.006s
+logistics-p590.pddl
+;; length: 3549
+
+real	1m38.004s
+user	1m37.879s
+sys	0m0.011s
+logistics-p595.pddl
+;; length: 3579
+
+real	1m36.460s
+user	1m36.308s
+sys	0m0.007s
+logistics-p600.pddl
+;; length: 3609
+
+real	1m38.230s
+user	1m38.104s
+sys	0m0.008s
+logistics-p605.pddl
+;; length: 3639
+
+real	1m39.859s
+user	1m39.716s
+sys	0m0.010s
+logistics-p60.pddl
+;; length: 369
+
+real	0m1.196s
+user	0m1.188s
+sys	0m0.007s
+logistics-p610.pddl
+;; length: 3669
+
+real	1m41.764s
+user	1m41.533s
+sys	0m0.057s
+logistics-p615.pddl
+;; length: 3699
+
+real	1m45.618s
+user	1m45.484s
+sys	0m0.009s
+logistics-p620.pddl
+;; length: 3729
+
+real	1m45.287s
+user	1m45.147s
+sys	0m0.014s
+logistics-p625.pddl
+;; length: 3759
+
+real	1m47.299s
+user	1m47.047s
+sys	0m0.065s
+logistics-p630.pddl
+;; length: 3789
+
+real	1m48.675s
+user	1m48.537s
+sys	0m0.009s
+logistics-p635.pddl
+;; length: 3819
+
+real	1m50.657s
+user	1m50.513s
+sys	0m0.006s
+logistics-p640.pddl
+;; length: 3849
+
+real	1m53.771s
+user	1m53.487s
+sys	0m0.074s
+logistics-p645.pddl
